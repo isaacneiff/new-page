@@ -12,12 +12,12 @@ export default function AboutSection() {
           <div className="md:flex">
             <div className="md:w-2/5 relative min-h-[350px] md:min-h-0">
               <Image
-                src="https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/carla.jpg"
+                src="https://picsum.photos/seed/healthcare-professional/600/800"
                 alt="Carla, a nutricionista"
                 layout="fill"
                 objectFit="cover"
                 className="transition-transform duration-500 hover:scale-105"
-                data-ai-hint="nutritionist portrait"
+                data-ai-hint="healthcare professional"
               />
             </div>
             <div className="md:w-3/5 bg-card">
