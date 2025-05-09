@@ -4,7 +4,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Activity, UtensilsCrossed, Target, Users, Brain, CalendarDays, Briefcase, HeartHandshake, TrendingUp, Lightbulb } from "lucide-react";
+import { BookOpen, Activity, UtensilsCrossed, Target, Users, Brain, CalendarDays, Briefcase, HeartHandshake, Lightbulb, Microscope } from "lucide-react";
 import Image from 'next/image';
 
 const coursesData = [
@@ -89,12 +89,12 @@ const coursesData = [
     id: "curso-nutricao-trabalho",
     triggerTitle: "Nutrição no Trabalho",
     title: "Performance Máxima: Nutrição para o Ambiente Corporativo",
-    icon: <Briefcase size={40} className="text-primary" />,
+    icon: <Microscope size={40} className="text-primary"/>,
     description: "Aprenda como a alimentação pode impulsionar sua produtividade, energia e bem-estar no trabalho. Dicas práticas para refeições e lanches saudáveis no escritório.",
     ctaText: "Invista em Você",
     imageSrc: "https://picsum.photos/seed/workplace-nutrition/600/400",
-    imageAlt: "Curso de Nutrição no Trabalho",
-    dataAiHint: "workplace nutrition"
+    imageAlt: "Curso SUS em 50",
+    dataAiHint: "Curso SUS em 50"
   },
   {
     id: "curso-relacionamento-comida",
@@ -111,7 +111,7 @@ const coursesData = [
     id: "curso-longevidade",
     triggerTitle: "Nutrição e Longevidade",
     title: "Segredos da Nutrição para uma Vida Longa e Saudável",
-    icon: <TrendingUp size={40} className="text-primary" />,
+    icon: <Briefcase size={36} className="text-primary" />,
     description: "Descubra como a ciência da nutrição pode contribuir para um envelhecimento ativo e saudável. Estratégias alimentares para promover a longevidade e vitalidade.",
     ctaText: "Viva Mais e Melhor",
     imageSrc: "https://picsum.photos/seed/longevity-nutrition/600/400",

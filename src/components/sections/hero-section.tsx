@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="public/assets/Hero-_.svg"
+        src="/public/assets/hero.svg"
         alt="Background image related to medical studies or health"
         layout="fill"
         objectFit="cover"

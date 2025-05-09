@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    domains: ['localhost'],
+    path: 'public/assets',
     remotePatterns: [
       {
         protocol: 'https',
