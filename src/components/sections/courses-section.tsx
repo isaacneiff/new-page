@@ -4,7 +4,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Activity, UtensilsCrossed, Target, Users, Brain, CalendarDays } from "lucide-react";
+import { BookOpen, Activity, UtensilsCrossed, Target, Users, Brain, CalendarDays, Briefcase, HeartHandshake, TrendingUp, Lightbulb } from "lucide-react";
 import Image from 'next/image';
 
 const coursesData = [
@@ -41,6 +41,94 @@ const coursesData = [
     imageAlt: "Curso de Cozinha Saudável",
     dataAiHint: "healthy cooking"
   },
+  {
+    id: "curso-emagrecimento",
+    triggerTitle: "Emagrecimento Consciente",
+    title: "Jornada do Emagrecimento Consciente e Sustentável",
+    icon: <Target size={40} className="text-primary" />,
+    description: "Transforme sua relação com o corpo e a comida. Alcance seus objetivos de perda de peso de forma saudável, equilibrada e duradoura, sem dietas restritivas.",
+    ctaText: "Descubra a Jornada",
+    imageSrc: "https://picsum.photos/seed/mindful-weightloss/600/400",
+    imageAlt: "Curso de Emagrecimento Consciente",
+    dataAiHint: "mindful weightloss"
+  },
+  {
+    id: "curso-infantil",
+    triggerTitle: "Nutrição Infantil",
+    title: "Nutrindo o Futuro: Guia de Alimentação Infantil",
+    icon: <Users size={40} className="text-primary" />,
+    description: "Aprenda a oferecer uma alimentação nutritiva e prazerosa para crianças, desde a introdução alimentar até a fase escolar, garantindo crescimento e desenvolvimento saudáveis.",
+    ctaText: "Comece Agora",
+    imageSrc: "https://picsum.photos/seed/kids-nutrition/600/400",
+    imageAlt: "Curso de Nutrição Infantil",
+    dataAiHint: "kids nutrition"
+  },
+  {
+    id: "curso-mental",
+    triggerTitle: "Nutrição e Mente",
+    title: "Alimentação Inteligente para Saúde Mental e Cognitiva",
+    icon: <Brain size={40} className="text-primary" />,
+    description: "Explore a conexão entre nutrição e saúde cerebral. Descubra alimentos e hábitos que podem melhorar o humor, a concentração e proteger sua mente.",
+    ctaText: "Cuide da Sua Mente",
+    imageSrc: "https://picsum.photos/seed/brain-health-nutrition/600/400",
+    imageAlt: "Curso de Nutrição e Saúde Mental",
+    dataAiHint: "brain health"
+  },
+  {
+    id: "curso-planejamento",
+    triggerTitle: "Planejamento de Refeições",
+    title: "Mestre do Planejamento: Refeições Saudáveis e Organizadas",
+    icon: <CalendarDays size={40} className="text-primary" />,
+    description: "Domine a arte de planejar suas refeições semanais. Economize tempo, dinheiro e garanta uma alimentação equilibrada e variada para toda a família.",
+    ctaText: "Planeje Suas Refeições",
+    imageSrc: "https://picsum.photos/seed/meal-planning/600/400",
+    imageAlt: "Curso de Planejamento de Refeições",
+    dataAiHint: "meal planning"
+  },
+  {
+    id: "curso-nutricao-trabalho",
+    triggerTitle: "Nutrição no Trabalho",
+    title: "Performance Máxima: Nutrição para o Ambiente Corporativo",
+    icon: <Briefcase size={40} className="text-primary" />,
+    description: "Aprenda como a alimentação pode impulsionar sua produtividade, energia e bem-estar no trabalho. Dicas práticas para refeições e lanches saudáveis no escritório.",
+    ctaText: "Invista em Você",
+    imageSrc: "https://picsum.photos/seed/workplace-nutrition/600/400",
+    imageAlt: "Curso de Nutrição no Trabalho",
+    dataAiHint: "workplace nutrition"
+  },
+  {
+    id: "curso-relacionamento-comida",
+    triggerTitle: "Paz com a Comida",
+    title: "Construindo um Relacionamento Saudável com a Comida",
+    icon: <HeartHandshake size={40} className="text-primary" />,
+    description: "Supere a culpa e a ansiedade alimentar. Desenvolva uma relação de paz e intuição com a comida, aprendendo a ouvir e respeitar as necessidades do seu corpo.",
+    ctaText: "Faça as Pazes",
+    imageSrc: "https://picsum.photos/seed/food-relationship/600/400",
+    imageAlt: "Curso sobre Relacionamento com a Comida",
+    dataAiHint: "food relationship"
+  },
+  {
+    id: "curso-longevidade",
+    triggerTitle: "Nutrição e Longevidade",
+    title: "Segredos da Nutrição para uma Vida Longa e Saudável",
+    icon: <TrendingUp size={40} className="text-primary" />,
+    description: "Descubra como a ciência da nutrição pode contribuir para um envelhecimento ativo e saudável. Estratégias alimentares para promover a longevidade e vitalidade.",
+    ctaText: "Viva Mais e Melhor",
+    imageSrc: "https://picsum.photos/seed/longevity-nutrition/600/400",
+    imageAlt: "Curso de Nutrição e Longevidade",
+    dataAiHint: "longevity health"
+  },
+  {
+    id: "curso-mitos-verdades",
+    triggerTitle: "Mitos da Nutrição",
+    title: "Desvendando Mitos e Verdades sobre Alimentação",
+    icon: <Lightbulb size={40} className="text-primary" />,
+    description: "Navegue pelo mundo da informação nutricional com clareza. Desmistifique dietas da moda e aprenda o que realmente importa para uma alimentação saudável.",
+    ctaText: "Informe-se Corretamente",
+    imageSrc: "https://picsum.photos/seed/nutrition-myths/600/400",
+    imageAlt: "Curso sobre Mitos e Verdades da Nutrição",
+    dataAiHint: "nutrition facts"
+  },
 ];
 
 export default function CoursesSection() {
@@ -51,12 +139,12 @@ export default function CoursesSection() {
           Cursos Oferecidos
         </h2>
         <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-10 bg-muted p-2 rounded-lg shadow-sm">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-20 bg-muted p-4 rounded-lg shadow-sm">
             {coursesData.map((course) => (
               <TabsTrigger 
                 key={course.id} 
                 value={course.id} 
-                className="py-3 text-xs sm:text-sm font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 rounded-md"
+                className="py-4 text-sm sm:text-base font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 rounded-md"
               >
                 {course.triggerTitle}
               </TabsTrigger>
@@ -66,7 +154,7 @@ export default function CoursesSection() {
             <TabsContent key={course.id} value={course.id}>
               <Card className="shadow-xl border-none overflow-hidden bg-card transform transition-all duration-500 ease-in-out">
                 <div className="lg:flex">
-                  <div className="lg:w-2/5 relative h-64 lg:h-auto">
+                  <div className="lg:w-2/5 relative h-64 lg:h-auto min-h-[300px]">
                     <Image
                         src={course.imageSrc}
                         alt={course.imageAlt}
@@ -105,4 +193,3 @@ export default function CoursesSection() {
     </section>
   );
 }
-
