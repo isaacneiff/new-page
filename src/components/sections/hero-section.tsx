@@ -1,19 +1,14 @@
-import Image from 'next/image';
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
-      <Image
-        src="/public/assets/hero.svg"
-        alt="Background image related to medical studies or health"
-        layout="fill"
-        objectFit="cover"
-        quality={85}
-        priority
-        className="z-0"
-      />
+    <section
+      id="home"
+      className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('/assets/hero.svg')" }}
+    >
       <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay */}
       <div className="relative z-20 container mx-auto px-4 py-16">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
@@ -29,3 +24,4 @@ export default function HeroSection() {
     </section>
   );
 }
+
