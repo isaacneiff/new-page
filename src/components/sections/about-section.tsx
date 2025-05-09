@@ -12,7 +12,7 @@ export default function AboutSection() {
           <div className="md:flex">
             <div className="md:w-2/5 relative min-h-[350px] md:min-h-0">
               <Image
-                src="https://picsum.photos/seed/healthcare-professional/600/800"
+                src="https://picsum.photos/seed/healthcare-professional/400/500"
                 alt="Carla, a nutricionista"
                 layout="fill"
                 objectFit="cover"

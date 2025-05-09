@@ -139,12 +139,12 @@ export default function CoursesSection() {
           Cursos Oferecidos
         </h2>
         <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-20 bg-muted p-4 rounded-lg shadow-sm">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mb-20 bg-muted p-2 rounded-4xl shadow-sm">
             {coursesData.map((course) => (
               <TabsTrigger 
                 key={course.id} 
                 value={course.id} 
-                className="py-4 text-sm sm:text-base font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 rounded-md"
+                className="py-3 text-sm sm:text-base font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 rounded-md"
               >
                 {course.triggerTitle}
               </TabsTrigger>
