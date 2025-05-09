@@ -2,11 +2,13 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+console.log('Imagem:', Image);
+
 export default function HeroSection() {
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="/public/assets/hero.svg"
+        src="http://localhost:9002/public/assets/curso.jpg"
         alt="Background image related to medical studies or health"
         layout="fill"
         objectFit="cover"
