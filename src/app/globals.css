@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    --primary: 180 100% 25%; /* Teal #008080 for CTAs */
+    --primary: 210 29% 16%; /* Dark Blue #1e2a36 for CTAs */
     --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 27 33% 50%; /* Brown #A67B5B from original */
@@ -22,7 +22,7 @@
     --muted: 33 30% 92%; /* Lighter beige #F0EBE8 for muted backgrounds */
     --muted-foreground: 0 0% 40%; /* Medium Gray #666666 for muted text */
 
-    --accent: 180 100% 30%; /* Slightly different Teal for hover/accent states */
+    --accent: 210 29% 20%; /* Slightly lighter Dark Blue #25313f for hover/accent states */
     --accent-foreground: 0 0% 100%; /* White */
 
     --destructive: 0 84.2% 60.2%;
@@ -30,19 +30,19 @@
 
     --border: 33 25% 88%; /* Subtle beige border #E0DACE */
     --input: 33 25% 88%;
-    --ring: 180 100% 35%; /* Teal for focus rings */
+    --ring: 210 29% 20%; /* Dark Blue #25313f for focus rings */
 
     --radius: 0.5rem;
 
     /* Sidebar variables for consistency if needed, match card/background */
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 0 0% 20%;
-    --sidebar-primary: 180 100% 25%;
+    --sidebar-primary: 210 29% 16%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 180 100% 30%;
+    --sidebar-accent: 210 29% 20%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 33 25% 88%;
-    --sidebar-ring: 180 100% 35%;
+    --sidebar-ring: 210 29% 20%;
   }
 
   .dark {
@@ -56,8 +56,8 @@
     --popover: 0 0% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 180 80% 50%; /* Brighter Teal for dark mode */
-    --primary-foreground: 0 0% 10%;
+    --primary: 210 29% 50%; /* Lighter Desaturated Blue #62778c for dark mode */
+    --primary-foreground: 0 0% 10%; /* Dark Gray/Black */
 
     --secondary: 27 40% 60%; /* Brighter Brown for dark mode */
     --secondary-foreground: 0 0% 10%;
@@ -65,25 +65,25 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 180 80% 55%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 210 29% 55%; /* Brighter Desaturated Blue #708499 for dark mode */
+    --accent-foreground: 0 0% 10%; /* Dark Gray/Black */
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 95%;
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 180 80% 55%;
+    --ring: 210 29% 55%; /* Brighter Desaturated Blue #708499 for dark mode focus rings */
 
     /* Sidebar dark variables */
     --sidebar-background: 0 0% 12%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 180 80% 50%;
+    --sidebar-primary: 210 29% 50%;
     --sidebar-primary-foreground: 0 0% 10%;
-    --sidebar-accent: 180 80% 55%;
+    --sidebar-accent: 210 29% 55%;
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 180 80% 55%;
+    --sidebar-ring: 210 29% 55%;
   }
 }
 
