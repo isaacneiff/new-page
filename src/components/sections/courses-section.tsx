@@ -139,7 +139,7 @@ export default function CoursesSection() {
           Cursos Oferecidos
         </h2>
         <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto">
-          <TabsList className="flex overflow-x-auto p-2 space-x-2 mb-12 bg-muted rounded-lg shadow-sm sm:grid sm:w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-2 sm:space-x-0 sm:mb-12">
+          <TabsList className="flex flex-wrap justify-center p-2 gap-2 mb-12 bg-muted rounded-lg shadow-sm sm:grid sm:w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-2 sm:space-x-0 sm:mb-12">
             {coursesData.map((course) => (
               <TabsTrigger
                 key={course.id}
@@ -151,7 +151,7 @@ export default function CoursesSection() {
             ))}
           </TabsList>
           {coursesData.map((course) => (
-            <TabsContent key={course.id} value={course.id}>
+            <TabsContent key={course.id} value={course.id} className="mt-15">-<hr></hr>-
               <Card className="shadow-xl border-none overflow-hidden bg-card transform transition-all duration-500 ease-in-out">
                 <div className="lg:flex">
                   <div className="lg:w-2/5 relative h-64 lg:h-auto min-h-[300px]">
