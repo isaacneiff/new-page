@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -11,6 +12,7 @@ const navItems = [
   { href: '#home', label: 'Home' },
   { href: '#sobre', label: 'Sobre Mim' },
   { href: '#servicos', label: 'Serviços' },
+  { href: '#cursos', label: 'Cursos' },
   { href: '#depoimentos', label: 'Depoimentos' },
   { href: '#contato', label: 'Contato' },
 ];
