@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -6,6 +6,11 @@ console.log('Imagem:', Image);
 
 export default function HeroSection() {
   return (
+    <section
+      id="home"
+      className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('/assets/hero.svg')" }}
+    >
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
         src="http://localhost:9002/public/assets/curso.jpg"
@@ -31,3 +36,4 @@ export default function HeroSection() {
     </section>
   );
 }
+
