@@ -8,28 +8,8 @@ import { BookOpen, Activity, UtensilsCrossed, Target, Users, Brain, CalendarDays
 import Image from 'next/image';
 
 const coursesData = [
-  {
-    id: "curso-alimentacao",
-    triggerTitle: "Alimentação Saudável",
-    title: "Guia Completo de Alimentação Saudável",
-    icon: <BookOpen size={40} className="text-primary" />,
-    description: "Aprenda os fundamentos da nutrição, como montar pratos equilibrados, ler rótulos e fazer escolhas inteligentes no supermercado para uma vida mais saudável e energética.",
-    ctaText: "Saiba Mais",
-    imageSrc: "https://picsum.photos/seed/healthy-eating-guide/600/400",
-    imageAlt: "Guia de Alimentação Saudável",
-    dataAiHint: "healthy food guide"
-  },
-  {
-    id: "curso-esportiva",
-    triggerTitle: "Nutrição Esportiva",
-    title: "Nutrição para Performance Esportiva",
-    icon: <Activity size={40} className="text-primary" />,
-    description: "Maximize seus resultados nos treinos com estratégias nutricionais personalizadas para ganho de massa muscular, mais energia e recuperação otimizada.",
-    ctaText: "Saiba Mais",
-    imageSrc: "https://picsum.photos/seed/sports-nutrition-course/600/400",
-    imageAlt: "Curso de Nutrição Esportiva",
-    dataAiHint: "sports nutrition"
-  },
+ 
+ 
   {
     id: "curso-cozinha",
     triggerTitle: "Cozinha Prática",
@@ -85,50 +65,7 @@ const coursesData = [
     imageAlt: "Curso de Planejamento de Refeições",
     dataAiHint: "meal planning"
   },
-  {
-    id: "curso-nutricao-trabalho",
-    triggerTitle: "Nutrição no Trabalho",
-    title: "Performance Máxima: Nutrição para o Ambiente Corporativo",
-    icon: <Microscope size={40} className="text-primary"/>,
-    description: "Aprenda como a alimentação pode impulsionar sua produtividade, energia e bem-estar no trabalho. Dicas práticas para refeições e lanches saudáveis no escritório.",
-    ctaText: "Invista em Você",
-    imageSrc: "https://picsum.photos/seed/workplace-nutrition/600/400",
-    imageAlt: "Curso SUS em 50",
-    dataAiHint: "Curso SUS em 50"
-  },
-  {
-    id: "curso-relacionamento-comida",
-    triggerTitle: "Paz com a Comida",
-    title: "Construindo um Relacionamento Saudável com a Comida",
-    icon: <HeartHandshake size={40} className="text-primary" />,
-    description: "Supere a culpa e a ansiedade alimentar. Desenvolva uma relação de paz e intuição com a comida, aprendendo a ouvir e respeitar as necessidades do seu corpo.",
-    ctaText: "Faça as Pazes",
-    imageSrc: "https://picsum.photos/seed/food-relationship/600/400",
-    imageAlt: "Curso sobre Relacionamento com a Comida",
-    dataAiHint: "food relationship"
-  },
-  {
-    id: "curso-longevidade",
-    triggerTitle: "Nutrição e Longevidade",
-    title: "Segredos da Nutrição para uma Vida Longa e Saudável",
-    icon: <Briefcase size={36} className="text-primary" />,
-    description: "Descubra como a ciência da nutrição pode contribuir para um envelhecimento ativo e saudável. Estratégias alimentares para promover a longevidade e vitalidade.",
-    ctaText: "Viva Mais e Melhor",
-    imageSrc: "https://picsum.photos/seed/longevity-nutrition/600/400",
-    imageAlt: "Curso de Nutrição e Longevidade",
-    dataAiHint: "longevity health"
-  },
-  {
-    id: "curso-mitos-verdades",
-    triggerTitle: "Mitos da Nutrição",
-    title: "Desvendando Mitos e Verdades sobre Alimentação",
-    icon: <Lightbulb size={40} className="text-primary" />,
-    description: "Navegue pelo mundo da informação nutricional com clareza. Desmistifique dietas da moda e aprenda o que realmente importa para uma alimentação saudável.",
-    ctaText: "Informe-se Corretamente",
-    imageSrc: "https://picsum.photos/seed/nutrition-myths/600/400",
-    imageAlt: "Curso sobre Mitos e Verdades da Nutrição",
-    dataAiHint: "nutrition facts"
-  },
+
 ];
 
 export default function CoursesSection() {
@@ -138,8 +75,8 @@ export default function CoursesSection() {
         <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
           Cursos Oferecidos
         </h2>
-        <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto">
-          <TabsList className="flex flex-wrap justify-center p-2 gap-2 mb-12 bg-muted rounded-lg shadow-sm sm:grid sm:w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-2 sm:space-x-0 sm:mb-12">
+        <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto ">
+          <TabsList className="flex flex-wrap justify-center h-18 p-1 gap-2 mb-12 bg-muted rounded-lg shadow-sm sm:grid sm:w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:gap-2 sm:space-x-0 sm:mb-12 ">
             {coursesData.map((course) => (
               <TabsTrigger
                 key={course.id}
@@ -150,8 +87,9 @@ export default function CoursesSection() {
               </TabsTrigger>
             ))}
           </TabsList>
+          <br></br>
           {coursesData.map((course) => (
-            <TabsContent key={course.id} value={course.id} className="mt-15">-<hr></hr>-
+            <TabsContent key={course.id} value={course.id} className="mt-15"><hr></hr><br></br>
               <Card className="shadow-xl border-none overflow-hidden bg-card transform transition-all duration-500 ease-in-out">
                 <div className="lg:flex">
                   <div className="lg:w-2/5 relative h-64 lg:h-auto min-h-[300px]">

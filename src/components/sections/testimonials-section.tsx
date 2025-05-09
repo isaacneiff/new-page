@@ -25,6 +25,7 @@ const testimonials = [
     service: 'Paciente de Nutrição Materno-Infantil',
     dataAiHint: 'woman happy'
   },
+  
 ];
 
 export default function TestimonialsSection() {

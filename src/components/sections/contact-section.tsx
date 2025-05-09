@@ -29,8 +29,8 @@ export default function ContactSection() {
                 <Phone size={22} className="text-primary mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Telefone</h4>
-                  <a href="tel:+550000000000" className="hover:text-primary transition-colors">
-                    (XX) XXXXX-XXXX {/* Placeholder */}
+                  <a href="https://api.whatsapp.com/send/?phone=5542999493337&text=Ol%C3%A1%21+Vi+seu+an%C3%BAncio+no+Instagram+sobre+seus+cursos+e+tenho+interesse+em+saber+mais.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" className="hover:text-primary transition-colors">
+                    +55 (42) 9949-3337 {/* Placeholder */}
                   </a>
                 </div>
               </div>

@@ -38,8 +38,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="#home" className={cn("flex items-center gap-2 text-2xl font-bold transition-colors", isScrolled ? "text-secondary" : "text-white hover:text-muted" )}>
-          <Leaf size={28} />
-          Carla Nutricionista
+          Zanelatto Academy
         </Link>
 
         {/* Desktop Navigation */}

@@ -12,7 +12,7 @@ export default function AboutSection() {
           <div className="md:flex">
             <div className="md:w-2/5 relative min-h-[350px] md:min-h-0">
               <Image
-                src="https://picsum.photos/seed/healthcare-professional/400/500"
+                src="/assets/carla.svg"
                 alt="Carla, a nutricionista"
                 layout="fill"
                 objectFit="cover"
@@ -20,7 +20,7 @@ export default function AboutSection() {
                 data-ai-hint="healthcare professional"
               />
             </div>
-            <div className="md:w-3/5 bg-card">
+            <div className="md:w-3/5 bg-card" style={{ color: '#b9b9b9' }}>
               <CardContent className="p-8 lg:p-12">
                 <p className="text-lg text-foreground mb-4 leading-relaxed">
                   Olá! Sou Carla, nutricionista apaixonada por ajudar pessoas a alcançarem seus objetivos de saúde e bem-estar através da alimentação. Minha missão é mostrar que comer bem pode ser prazeroso, prático e transformador.
