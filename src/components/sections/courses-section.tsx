@@ -4,7 +4,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Activity, UtensilsCrossed } from "lucide-react";
+import { BookOpen, Activity, UtensilsCrossed, Target, Users, Brain, CalendarDays } from "lucide-react";
 import Image from 'next/image';
 
 const coursesData = [
@@ -41,6 +41,50 @@ const coursesData = [
     imageAlt: "Curso de Cozinha Saudável",
     dataAiHint: "healthy cooking"
   },
+  {
+    id: "curso-emagrecimento",
+    triggerTitle: "Emagrecimento Sustentável",
+    title: "Nutrição para Emagrecimento Sustentável",
+    icon: <Target size={40} className="text-primary" />,
+    description: "Foco em perda de peso saudável e duradoura, sem dietas restritivas, aprendendo a fazer escolhas conscientes e a manter a motivação.",
+    ctaText: "Saiba Mais",
+    imageSrc: "https://picsum.photos/seed/sustainable-weight-loss/600/400",
+    imageAlt: "Curso de Emagrecimento Sustentável",
+    dataAiHint: "weight loss"
+  },
+  {
+    id: "curso-familiar",
+    triggerTitle: "Nutrição Familiar",
+    title: "Nutrição Infantil e Familiar",
+    icon: <Users size={40} className="text-primary" />,
+    description: "Aprenda a construir hábitos alimentares saudáveis para toda a família, desde a introdução alimentar dos bebês até a adolescência, promovendo saúde e união à mesa.",
+    ctaText: "Saiba Mais",
+    imageSrc: "https://picsum.photos/seed/family-nutrition/600/400",
+    imageAlt: "Curso de Nutrição Infantil e Familiar",
+    dataAiHint: "family eating"
+  },
+  {
+    id: "curso-mindful",
+    triggerTitle: "Mindful Eating",
+    title: "Mindful Eating e Intuição Alimentar",
+    icon: <Brain size={40} className="text-primary" />,
+    description: "Desenvolva uma relação mais consciente e intuitiva com a comida. Aprenda a ouvir os sinais do seu corpo, comer com atenção plena e redescobrir o prazer na alimentação.",
+    ctaText: "Saiba Mais",
+    imageSrc: "https://picsum.photos/seed/mindful-eating-intuition/600/400",
+    imageAlt: "Curso de Mindful Eating",
+    dataAiHint: "mindful eating"
+  },
+  {
+    id: "curso-planejamento",
+    triggerTitle: "Planejamento de Refeições",
+    title: "Planejamento de Refeições Inteligentes",
+    icon: <CalendarDays size={40} className="text-primary" />,
+    description: "Domine a arte de planejar suas refeições semanais de forma prática, econômica e nutritiva. Economize tempo, reduza o desperdício e garanta uma alimentação saudável.",
+    ctaText: "Saiba Mais",
+    imageSrc: "https://picsum.photos/seed/meal-planning-smart/600/400",
+    imageAlt: "Curso de Planejamento de Refeições",
+    dataAiHint: "meal planning"
+  },
 ];
 
 export default function CoursesSection() {
@@ -51,12 +95,12 @@ export default function CoursesSection() {
           Cursos Oferecidos
         </h2>
         <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 gap-2 mb-10 bg-muted p-2 rounded-lg shadow-sm">
+          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-10 bg-muted p-2 rounded-lg shadow-sm">
             {coursesData.map((course) => (
               <TabsTrigger 
                 key={course.id} 
                 value={course.id} 
-                className="py-3 text-sm sm:text-base font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 rounded-md"
+                className="py-3 text-xs sm:text-sm font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg transition-all duration-300 rounded-md"
               >
                 {course.triggerTitle}
               </TabsTrigger>
@@ -105,3 +149,4 @@ export default function CoursesSection() {
     </section>
   );
 }
+
