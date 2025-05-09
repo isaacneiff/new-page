@@ -6,14 +6,14 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/hero-bg.jpg"
-        alt="Comida saudável e colorida"
+        src="https://picsum.photos/seed/medical-study/1920/1080"
+        alt="Estudantes de medicina ou ambiente de estudo médico"
         layout="fill"
         objectFit="cover"
         quality={85}
         priority
         className="z-0"
-        data-ai-hint="healthy food nutrition"
+        data-ai-hint="medical study"
       />
       <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay */}
       <div className="relative z-20 container mx-auto px-4 py-16">
