@@ -5,7 +5,7 @@ export default function ContactSection() {
   return (
     <section id="contato" className="py-16 lg:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12" style={{ color: '#857331' }}>
           Entre em Contato
         </h2>
         <div className="max-w-4xl mx-auto lg:flex lg:gap-12 bg-card p-8 sm:p-12 rounded-xl shadow-xl border-none">

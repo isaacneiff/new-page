@@ -73,7 +73,7 @@ export default function CoursesSection() {
     <section id="cursos" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
-          Cursos Oferecidos
+          <span style={{ color: "#857331" }}>Cursos Oferecidos</span>
         </h2>
         <Tabs defaultValue={coursesData[0].id} className="w-full max-w-5xl mx-auto ">
           <TabsList className="flex flex-wrap justify-center h-18 p-1 gap-2 mb-12 bg-muted rounded-lg shadow-sm sm:grid sm:w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:gap-2 sm:space-x-0 sm:mb-12 ">
@@ -108,7 +108,7 @@ export default function CoursesSection() {
                         <div className="p-3 bg-primary/10 rounded-full">
                           {course.icon}
                         </div>
-                        <CardTitle className="text-2xl lg:text-3xl text-foreground leading-tight">{course.title}</CardTitle>
+                        <CardTitle className="text-2xl lg:text-3xl leading-tight" style={{ color: "#857331" }}>{course.title}</CardTitle>
                       </div>
                     </CardHeader>
                     <CardContent className="p-6 lg:p-8 pt-0 flex-grow">

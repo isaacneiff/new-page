@@ -11,7 +11,7 @@ import ContactSection from '@/components/sections/contact-section';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Header academyNameColor="#c5302c" />
       <main className="flex-grow">
         <HeroSection />
         <AboutSection />

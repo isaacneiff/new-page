@@ -5,8 +5,8 @@ export default function AboutSection() {
   return (
     <section id="sobre" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
-          Sobre Mim
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-[#857331]">
+          <span style={{ color: '#857331' }}>Sobre Mim</span>
         </h2>
         <Card className="overflow-hidden shadow-xl border-none">
           <div className="md:flex">
@@ -20,7 +20,7 @@ export default function AboutSection() {
                 data-ai-hint="healthcare professional"
               />
             </div>
-            <div className="md:w-3/5 bg-card" style={{ color: '#b9b9b9' }}>
+            <div className="md:w-3/5 bg-card">
               <CardContent className="p-8 lg:p-12">
                 <p className="text-lg text-foreground mb-4 leading-relaxed">
                   Olá! Sou Carla, nutricionista apaixonada por ajudar pessoas a alcançarem seus objetivos de saúde e bem-estar através da alimentação. Minha missão é mostrar que comer bem pode ser prazeroso, prático e transformador.

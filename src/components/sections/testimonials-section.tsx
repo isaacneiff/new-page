@@ -31,8 +31,8 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <section id="depoimentos" className="py-16 lg:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
+      <div className="container mx-auto px-4" style={{ color: '#c5302c' }}>
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12" style={{ color: '#857331' }}>
           O Que Meus Pacientes Dizem
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
