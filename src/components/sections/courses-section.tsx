@@ -112,9 +112,9 @@ export default function CoursesSection() {
             <Tabs
               value={currentTabValue}
               onValueChange={handleTabChange}
-              className="mb-8 w-full max-w-5xl mx-auto"
+              className="mb-8 w-full max-w-8xl mx-auto"
             >
-              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2 bg-muted p-6 rounded-lg h-auto md:h-20 custom-tabs-list overflow-x-auto">
+              <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-10 bg-muted p-6 rounded-lg h-auto md:h-20 custom-tabs-list overflow-x-auto">
                 {coursesData.map((course) => (
                   <TabsTrigger
                     key={course.id}
@@ -127,7 +127,7 @@ export default function CoursesSection() {
               </TabsList>
             </Tabs>
 
-            <div className="w-full max-w-5xl mx-auto mt-6">
+            <div className="w-full max-w-6xl mx-auto mt-7">
               <Carousel
                 setApi={setCarouselApi}
                 opts={{
