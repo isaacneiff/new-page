@@ -123,3 +123,22 @@
     scrollbar-width: none;  /* Firefox */
   }
 }
+
+/* Accordion styles adjustments */
+@layer components {
+  .accordion-item {
+    @apply border-b border-border/50;
+  }
+  .accordion-item:last-child {
+    @apply border-b-0;
+  }
+  .accordion-trigger {
+    @apply py-3 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180;
+    @apply text-foreground/90 hover:text-primary; /* Custom trigger text color */
+  }
+  .accordion-content {
+    @apply pb-3 pt-0 text-sm text-muted-foreground/90; /* Custom content text color */
+  }
+}
+
+    
