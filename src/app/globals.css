@@ -112,3 +112,14 @@
     opacity: 1;
   }
 }
+
+/* Custom scrollbar hiding for TabsList */
+@layer utilities {
+  .custom-tabs-list::-webkit-scrollbar {
+    display: none;
+  }
+  .custom-tabs-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
