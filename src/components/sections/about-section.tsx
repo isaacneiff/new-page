@@ -13,7 +13,7 @@ export default function AboutSection() {
           <div className="md:flex">
             <div className="md:w-2/5 relative min-h-[350px] md:min-h-0">
               <Image
-                src="/assets/carla.svg"
+                src="https://picsum.photos/seed/healthcare-professional/600/800"
                 alt="Carla, a nutricionista"
                 layout="fill"
                 objectFit="cover"
@@ -24,37 +24,37 @@ export default function AboutSection() {
             <div className="md:w-3/5 bg-card display-flex flex-row justify-center">
   <CardContent className="p-8 lg:p-12 space-y-4">
     <div className="flex items-start gap-2">
-      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <CheckCheck className="w-6 h-6 text-primary mt-1 shrink-0" />
       <p className="text-lg text-foreground leading-relaxed">
         Experiência de 13 anos com docência em ensino superior voltado para cursos de saúde.
       </p>
     </div>
     <div className="flex items-start gap-2">
-      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <CheckCheck className="w-6 h-6 text-primary mt-1 shrink-0" />
       <p className="text-lg text-foreground leading-relaxed">
         Professora do curso de medicina.
       </p>
     </div>
     <div className="flex items-start gap-2">
-      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <CheckCheck className="w-6 h-6 text-primary mt-1 shrink-0" />
       <p className="text-lg text-foreground leading-relaxed">
         Concluiu o mestrado em Nutrição pela Universidade Federal de Santa Catarina - UFSC em 2014 com ênfase em saúde pública.
       </p>
     </div>
     <div className="flex items-start gap-2">
-      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <CheckCheck className="w-6 h-6 text-primary mt-1 shrink-0" />
       <p className="text-lg text-foreground leading-relaxed">
         Apaixonada por "Saúde baseada em evidências".
       </p>
     </div>
     <div className="flex items-start gap-2">
-      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <CheckCheck className="w-6 h-6 text-primary mt-1 shrink-0" />
       <p className="text-lg text-foreground leading-relaxed">
         Também atuou como tutora de especialização em atenção básica.
       </p>
     </div>
     <div className="flex items-start gap-2">
-      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <CheckCheck className="w-6 h-6 text-primary mt-1 shrink-0" />
       <p className="text-lg text-foreground leading-relaxed">
         Revisora de Revistas Científicas.
       </p>
@@ -68,3 +68,4 @@ export default function AboutSection() {
     </section>
   );
 }
+
