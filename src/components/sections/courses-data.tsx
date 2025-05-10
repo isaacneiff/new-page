@@ -24,7 +24,7 @@ export const coursesData: Course[] = [
     icon: <CalendarDays size={32} className="text-primary" />,
     description:
       "Domine a arte de planejar suas refeições semanais. Economize tempo, dinheiro e garanta uma alimentação equilibrada e variada para toda a família.",
-    ctaText: "Planeje Suas Refeições",
+    ctaText: "Saiba mais",
     imageSrc: "https://picsum.photos/seed/meal-planning-course/600/400",
     imageAlt: "Curso de Planejamento de Refeições",
     dataAiHint: "meal planning",
