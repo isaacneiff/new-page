@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name} className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col bg-card border-none">
               <CardContent className="p-6 text-center flex flex-col items-center flex-grow">
-                <Avatar className="w-24 h-24 mb-4 border-4 border-primary/20">
+                <Avatar className="w-24 h-24 mb-4 border-4 border-[hsl(var(--avatar-border-custom-red))]">
                   <AvatarImage src={testimonial.imageSrc} alt={testimonial.name} data-ai-hint={testimonial.dataAiHint} />
                   <AvatarFallback>{testimonial.name.substring(0, 2).toUpperCase()}</AvatarFallback>
                 </Avatar>
