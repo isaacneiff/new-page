@@ -1,75 +1,73 @@
 "use client";
 
 import * as React from "react";
-import {
-  Carousel as EmblaCarousel,
-  type EmblaCarouselType,
-} from "embla-carousel-react";
+import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type CarouselProps = {
   children: React.ReactNode;
   className?: string;
-  opts?: Parameters<typeof EmblaCarousel>[1];
   plugins?: any[];
+  opts?: EmblaOptionsType;
 };
 
-const CarouselContext = React.createContext<EmblaCarouselType | null>(null);
-
-export function Carousel({ children, className, opts, plugins }: CarouselProps) {
-  const [emblaRef, emblaApi] = EmblaCarousel(opts, plugins);
+export function Carousel({ children, className, plugins = [], opts = {} }: CarouselProps) {
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      skipSnaps: false,
+      containScroll: "trimSnaps",
+      ...opts,
+    },
+    plugins
+  );
 
   return (
-    <CarouselContext.Provider value={emblaApi}>
-      <div className={cn("relative overflow-hidden", className)} ref={emblaRef}>
-        {children}
+    <div className={cn("relative", className)}>
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex -ml-4">{children}</div>
       </div>
-    </CarouselContext.Provider>
+    </div>
   );
 }
 
 export function CarouselContent({ children }: { children: React.ReactNode }) {
-  return <div className="flex">{children}</div>;
+  return <>{children}</>;
 }
 
-export function CarouselItem({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
+export function CarouselItem({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={cn("min-w-full shrink-0 grow-0 basis-full", className)}>
+    <div
+      className={cn(
+        "shrink-0 grow-0 basis-full md:basis-1/2 lg:basis-1/3 px-4",
+        className
+      )}
+    >
       {children}
     </div>
   );
 }
 
-export function CarouselPrevious() {
-  const embla = React.useContext(CarouselContext);
-
+export function CarouselPrevious({ onClick }: { onClick?: () => void }) {
   return (
     <button
-      onClick={() => embla?.scrollPrev()}
-      className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-white/80 hover:bg-white rounded-full shadow"
+      onClick={onClick}
+      className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
     >
-      <ChevronLeft className="w-6 h-6 text-black" />
+      <ChevronLeft className="h-5 w-5" />
     </button>
   );
 }
 
-export function CarouselNext() {
-  const embla = React.useContext(CarouselContext);
-
+export function CarouselNext({ onClick }: { onClick?: () => void }) {
   return (
     <button
-      onClick={() => embla?.scrollNext()}
-      className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 bg-white/80 hover:bg-white rounded-full shadow"
+      onClick={onClick}
+      className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
     >
-      <ChevronRight className="w-6 h-6 text-black" />
+      <ChevronRight className="h-5 w-5" />
     </button>
   );
 }
