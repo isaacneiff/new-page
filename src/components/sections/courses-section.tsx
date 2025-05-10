@@ -101,7 +101,7 @@ export default function CoursesSection() {
   const currentTabValue = (coursesData[activeIndex] && coursesData[activeIndex].id) || (coursesData[0] ? coursesData[0].id : "");
 
   return (
-    <section id="cursos" className="py-16 lg:py-24 bg-background">
+    <section id="cursos" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
           Cursos Oferecidos
@@ -114,7 +114,7 @@ export default function CoursesSection() {
               onValueChange={handleTabChange}
               className="mb-8 w-full max-w-5xl mx-auto"
             >
-              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 bg-muted p-2 rounded-lg h-auto md:h-20 custom-tabs-list overflow-x-auto">
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2 bg-muted p-6 rounded-lg h-auto md:h-20 custom-tabs-list overflow-x-auto">
                 {coursesData.map((course) => (
                   <TabsTrigger
                     key={course.id}
@@ -174,7 +174,7 @@ export default function CoursesSection() {
                               <CardFooter className="p-0">
                                 <Button
                                   size="lg"
-                                  className="bg-primary hover:bg-accent text-primary-foreground text-base sm:text-lg py-2.5 sm:py-3 px-6 sm:px-8 rounded-md shadow-md transition-transform hover:scale-105"
+                                  className="bg-primary hover:bg-accent text-primary-foreground text-base sm:text-lg py-2.5 sm:py-3 px-6 sm:px-8 rounded-md shadow-md transition-transform hover:scale-90"
                                 >
                                   {course.ctaText}
                                 </Button>

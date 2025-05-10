@@ -18,9 +18,9 @@ export interface Course {
 export const coursesData: Course[] = [
  
   {
-    id: "curso-planejamento",
-    triggerTitle: "Planejamento",
-    title: "Mestre do Planejamento: Refeições Saudáveis e Organizadas",
+    id: "Medicina baseada eme evidencias",
+    triggerTitle: "Medicina baseada eme evidencias",
+    title: "Medicina baseada eme evidencias",
     icon: <CalendarDays size={32} className="text-primary" />,
     description:
       "Domine a arte de planejar suas refeições semanais. Economize tempo, dinheiro e garanta uma alimentação equilibrada e variada para toda a família.",
@@ -30,15 +30,15 @@ export const coursesData: Course[] = [
     dataAiHint: "meal planning",
   },
   {
-    id: "curso-leitura-rotulos",
-    triggerTitle: "Leitura de Rótulos",
-    title: "Decifrando Rótulos: Faça Escolhas Conscientes",
+    id: "Mentorias individuais e em grupo",
+    triggerTitle: "Mentorias individuais e em grupo",
+    title: "Mentorias individuais e em grupo",
     icon: <BookOpen size={32} className="text-primary" />,
     description:
       "Aprenda a interpretar as informações nutricionais dos alimentos e faça escolhas mais saudáveis e informadas no supermercado.",
     ctaText: "Decifre os Rótulos",
     imageSrc: "https://picsum.photos/seed/label-reading/600/400",
-    imageAlt: "Curso de Leitura de Rótulos",
+    imageAlt: "Mentorias individuais e em grupo",
     dataAiHint: "label reading",
   },
   {
