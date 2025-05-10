@@ -11,13 +11,13 @@ const coursesData = [
  
  
   {
-    id: "curso-cozinha",
+    id: "",
     triggerTitle: "Cozinha Prática",
     title: "Cozinha Saudável e Prática para o Dia a Dia",
     icon: <UtensilsCrossed size={40} className="text-primary" />,
     description: "Descubra receitas deliciosas, rápidas e nutritivas para facilitar sua rotina, transformar sua cozinha e adotar um estilo de vida mais saudável sem complicação.",
     ctaText: "Saiba Mais",
-    imageSrc: "https://picsum.photos/seed/healthy-cooking-course/600/400",
+    imageSrc: "",
     imageAlt: "Curso de Cozinha Saudável",
     dataAiHint: "healthy cooking"
   },

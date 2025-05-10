@@ -66,11 +66,10 @@ export default function Header() {
             <SheetContent side="right" className="w-[280px] bg-card p-6">
               <div className="flex justify-between items-center mb-8">
                 <Link href="#home" className="flex items-center gap-2 text-xl font-bold text-secondary" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Leaf size={24} />
-                  Carla Nutricionista
+                  Zanelatto Academy
                 </Link>
                 <SheetClose asChild>
-                   <Button variant="ghost" size="icon">
+                   <Button size="icon">
                     <X className="h-6 w-6 text-foreground" />
                     <span className="sr-only">Fechar menu</span>
                   </Button>
