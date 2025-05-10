@@ -1,6 +1,7 @@
 
 "use client";
 
+
 import React, { useState, useEffect, useCallback } from "react";
 import {
   Card,
@@ -68,11 +69,12 @@ export default function CoursesSection() {
   };
 
   return (
-    <section id="cursos" className="py-16 lg:py-24">
+    <section id="cursos" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
           Cursos Oferecidos
         </h2>
+
 
         {coursesData.length > 0 && (
           <Tabs
@@ -144,10 +146,23 @@ export default function CoursesSection() {
                               {course.ctaText}
                             </Button>
                           </CardFooter>
+
                         </div>
+                        <CardTitle className="text-2xl lg:text-3xl leading-tight" style={{ color: "#857331" }}>{course.title}</CardTitle>
                       </div>
-                    </Card>
+                    </CardHeader>
+                    <CardContent className="p-6 lg:p-8 pt-0 flex-grow">
+                      <CardDescription className="text-muted-foreground leading-relaxed text-base">
+                        {course.description}
+                      </CardDescription>
+                    </CardContent>
+                    <CardFooter className="p-6 lg:p-8 pt-0">
+                      <Button size="lg" className="bg-primary hover:bg-accent text-primary-foreground text-lg py-3 px-8 rounded-md shadow-md transition-transform hover:scale-105">
+                        {course.ctaText}
+                      </Button>
+                    </CardFooter>
                   </div>
+
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -155,6 +170,7 @@ export default function CoursesSection() {
             <CarouselNext className="hidden sm:flex" />
           </Carousel>
         </div>
+
       </div>
     </section>
   );
