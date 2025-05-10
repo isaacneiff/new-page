@@ -54,7 +54,7 @@ export const coursesData: Course[] = [
     ctaText: "Agende sua Mentoria",
     imageSrc: "/assets/course-mentorship.jpg",
     imageAlt: "Mentorias Acadêmicas",
-    dataAiHint: "academic guidance",
+    dataAiHint: "mentorship",
     modules: [
       {
         id: "mentor-mod1",
@@ -72,13 +72,13 @@ export const coursesData: Course[] = [
     icon: <Leaf size={32} className="text-primary" />,
     description:
       "Este curso é ideal para estudantes, pesquisadores e profissionais que desejam aprender conceitos essenciais de estatística sem complicação. Você vai entender os principais cálculos, gráficos e interpretações, tornando-se mais confiante na leitura e análise de dados.",
-    ctaText: "Explore o Vegetarianismo",
+    ctaText: "Inscreva-se Agora",
     imageSrc: "/assets/course-vegetarian.jpg",
     imageAlt: "Noções Basicas de estaticas",
-    dataAiHint: "vegetarian food",
+    dataAiHint: "notions of statistics",
     modules: [
       {
-        id: "veg-mod1",
+        id: "Noções Basicas de estaticas-mod1",
         title: "Clique e saiba mais.",
         description: "Aulas interativas e ao vivo.",
         topics: ["Noções de bioestatística para interpretação de estudos científicos", "Aplicação das evidências na prática clínica e no ensino.", "Material de apoio e certificado de conclusão."]
@@ -96,7 +96,7 @@ export const coursesData: Course[] = [
     ctaText: "Saiba Sobre Suplementos",
     imageSrc: "/assets/course-supplements.jpg",
     imageAlt: "Curso de Suplementação Inteligente",
-    dataAiHint: "dietary supplements",
+    dataAiHint: "medical research",
     modules: [
       {
         id: "sup-mod1",

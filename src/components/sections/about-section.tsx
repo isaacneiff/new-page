@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section id="sobre" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary" style={{ "color": "#1e2a36" }}>
           Sobre Mim
         </h2>
         <Card className="overflow-hidden shadow-xl border-none">

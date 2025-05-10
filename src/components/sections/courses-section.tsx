@@ -32,7 +32,7 @@ export default function CoursesSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const autoplayPlugin = useRef(
-    Autoplay({ delay: 7000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
   useEffect(() => {
@@ -100,7 +100,7 @@ export default function CoursesSection() {
   return (
     <section id="cursos" className="py-16 lg:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-primary">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-primary" style={{ color: "#1e2a36" }}>
           Cursos Oferecidos
         </h2>
 

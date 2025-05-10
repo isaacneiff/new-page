@@ -37,7 +37,7 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#home" className={cn("flex items-center gap-2 text-2xl font-bold transition-colors", isScrolled ? "text-secondary" : "text-white hover:text-muted" )}>
+        <Link href="#home" style={{ "color": "	#B22222" }} className={cn("flex items-center gap-2 text-2xl font-bold transition-colors", isScrolled ? "text-secondary" : "text-white hover:text-muted" )}>
           Zanelatto Academy
         </Link>
 
@@ -65,7 +65,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-card p-6">
               <div className="flex justify-between items-center mb-8">
-                <Link href="#home" className="flex items-center gap-2 text-xl font-bold text-secondary" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link href="#home" className="flex items-center gap-2 text-xl font-bold text-secondary" onClick={() => setIsMobileMenuOpen(false)} style={{ "color": "	#B22222" }}>
                   Zanelatto Academy
                 </Link>
                 <SheetClose asChild>
