@@ -117,7 +117,7 @@ export default function CoursesSection() {
                         }}
                         plugins={[autoplayPlugin.current]}
                         className="w-full"
-                    >
+                    ><hr></hr>
                         <CarouselContent>
                         {/* The Carousel internally manages displaying all items; Tabs select which "view" is active */}
                         {coursesData.map((course) => (
