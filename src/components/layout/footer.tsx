@@ -1,4 +1,5 @@
 import { Mail, Phone, Instagram, Facebook, Leaf, Github} from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,7 +15,7 @@ export default function Footer() {
             <Mail size={24} />
           </a>
           <a href="https://api.whatsapp.com/send/?phone=5542999493337&text=Ol%C3%A1%21+Vi+seu+an%C3%BAncio+no+Instagram+sobre+seus+cursos+e+tenho+interesse+em+saber+mais.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" aria-label="Telefone" className="hover:text-primary transition-colors">
-            <Phone size={24} />
+             <FaWhatsapp size={24} />
           </a>
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-primary transition-colors">
             <Instagram size={24} />
@@ -26,10 +27,10 @@ export default function Footer() {
         <p className="text-sm">
           &copy; {currentYear} Zanelatto Academy. Todos os direitos reservados.
         </p>
-        <a href="https://github.com/isaacneiff" target="_blank" rel="noopener noreferrer" className="text-xs mt-2 flex justify-center flex-direction-column">
-          Design por Isaac.  
-          <Github size={12}/>
-</a>
+        <p className="text-xs"><a href="https://github.com/isaacneiff" target="_blank" rel="noopener noreferrer" className="text-xs mt-2 flex justify-center flex-direction-column">
+           
+          Design por Isaac.  <Github size={12} className="text-primary mt-1 shrink-0"/> 
+</a></p>
       </div>
     </footer>
   );

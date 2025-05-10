@@ -1,8 +1,14 @@
 
 import type { LucideProps } from "lucide-react";
 import type { ReactElement } from "react";
-import { Hospital, ChartNoAxesCombined, BriefcaseMedical, UtensilsCrossed, Target, Users, Brain, CalendarDays, BookOpen, HeartPulse, Leaf, ShieldCheck, Activity, Zap, Smile, GraduationCap, CookingPot, Weight, Apple, BrainCog, CalendarCheck, BookHeart, ActivitySquare, Lightbulb } from "lucide-react";
+import { BriefcaseMedical, UtensilsCrossed, Target, Users, Brain, CalendarDays, BookOpen, HeartPulse, Leaf, ShieldCheck, Activity, Zap, Smile, GraduationCap, CookingPot, Weight, Apple, BrainCog, CalendarCheck, BookHeart, ActivitySquare, Lightbulb, Microscope, Users2, Presentation } from "lucide-react";
 
+export interface CourseModule {
+  id: string;
+  title: string;
+  description: string;
+  topics?: string[];
+}
 export interface Course {
   id: string;
   triggerTitle: string;
@@ -13,69 +19,105 @@ export interface Course {
   imageSrc: string;
   imageAlt: string;
   dataAiHint: string;
+  modules: CourseModule[];
 }
 
 export const coursesData: Course[] = [
- 
   {
-    id: "Medicina baseada eme evidencias",
-    triggerTitle: "Medicina baseada eme evidencias",
+    id: "medicina-baseada-evidencias",
+    triggerTitle: "Medicina Baseada em Evidências",
     title: "Para professores e profissionais de saúde que querem interpretar e aplicar ciência com confiança!",
-    icon: <BriefcaseMedical  size={32} className="text-primary" />,
+    icon: <Microscope size={32} className="text-primary" />,
     description:
-      "Este curso é voltado para docentes e profissionais da saúde que desejam aprimorar sua capacidade de analisar criticamente artigos científicos, compreender estatísticas médicas e tomar decisões clínicas ou acadêmicas embasadas nas melhores evidências disponíveis.",
-    ctaText: "Se inscreva",
+      "Aprenda a aplicar os princípios da MBE na prática clínica diária. Desenvolva habilidades para análise crítica de estudos científicos, tomada de decisão informada e melhoria da qualidade do cuidado ao paciente. Ideal para estudantes e profissionais da saúde.",
+    ctaText: "Inscreva-se Agora",
     imageSrc: "/assets/4.jpg",
-    imageAlt: "Curso de Planejamento de Refeições",
-    style: { display: "block", margin: "0 auto" },
-    dataAiHint: "meal planning",
+    imageAlt: "Curso de Medicina Baseada em Evidências",
+    dataAiHint: "medical research",
+    modules: [
+      {
+        id: "mbe-mod1",
+        title: "Clique e saiba mais.",
+        description: "Aulas interativas e ao vivo.",
+        topics: ["Introdução a medicina baseada em evidências", "Aplicação das evidências na prática clínica e no ensino.", "Noções de bioestatística para interpretação de estudos científicos","Material de apoio e certificado de conclusão."]
+      },
+     
+    ],
   },
   {
-    id: "Mentorias individuais e em grupo",
-    triggerTitle: "Mentorias individuais e em grupo",
-    title: "Uma jornada personalizada rumo à sua aprovação!",
-    icon: <BookOpen size={32} className="text-primary" />,
+    id: "mentorias-academicas",
+    triggerTitle: "Mentorias",
+    title: "Mentorias Individuais e em Grupo para Carreira Acadêmica",
+    icon: <Users2 size={32} className="text-primary" />,
     description:
-      "Se você busca um plano de estudos estratégico, acompanhamento exclusivo e técnicas que realmente funcionam, essa mentoria é para você. Aqui, trabalhamos suas dificuldades, fortalecemos seus pontos fortes e montamos um cronograma eficaz para maximizar sua performance..",
-    ctaText: "Se inscreva",
-    imageSrc: "/assets/mentoria.jpg",
-    imageAlt: "Mentorias individuais e em grupo",
-    dataAiHint: "label reading",
+      "Receba orientação personalizada para sua trajetória acadêmica. Ideal para quem busca desenvolver pesquisa, publicar artigos, preparar-se para processos seletivos de mestrado/doutorado ou aprimorar habilidades didáticas.",
+    ctaText: "Agende sua Mentoria",
+    imageSrc: "/assets/course-mentorship.jpg",
+    imageAlt: "Mentorias Acadêmicas",
+    dataAiHint: "academic guidance",
+    modules: [
+      {
+        id: "mentor-mod1",
+        title: "Módulo 1: Planejamento de Carreira Acadêmica",
+        description: "Definição de metas, identificação de oportunidades e estratégias para progressão na carreira.",
+        topics: ["Construção de currículo Lattes", "Networking acadêmico", "Editais e fomentos"]
+      }
+     
+    ],
   },
   {
-    id: "Noções basicas de estatísticas",
-    triggerTitle: "Noções basicas de estatísticas",
+    id: "Noções Basicas de estaticas",
+    triggerTitle: "Noções Basicas de estaticas",
     title: "Desmistificando a estatística para quem precisa compreender dados com clareza!",
-    icon: <ChartNoAxesCombined size={32} className="text-primary" />,
+    icon: <Leaf size={32} className="text-primary" />,
     description:
       "Este curso é ideal para estudantes, pesquisadores e profissionais que desejam aprender conceitos essenciais de estatística sem complicação. Você vai entender os principais cálculos, gráficos e interpretações, tornando-se mais confiante na leitura e análise de dados.",
-    ctaText: "Se inscreva",
-    imageSrc: "/assets/1..jpg",
-    imageAlt: "Curso de Nutrição Vegetariana",
-    dataAiHint: "vegetarian diet",
+    ctaText: "Explore o Vegetarianismo",
+    imageSrc: "/assets/course-vegetarian.jpg",
+    imageAlt: "Noções Basicas de estaticas",
+    dataAiHint: "vegetarian food",
+    modules: [
+      {
+        id: "veg-mod1",
+        title: "Clique e saiba mais.",
+        description: "Aulas interativas e ao vivo.",
+        topics: ["Noções de bioestatística para interpretação de estudos científicos", "Aplicação das evidências na prática clínica e no ensino.", "Material de apoio e certificado de conclusão."]
+      },
+
+    ],
   },
   {
-    id: "Curso SUS EM 50",
-    triggerTitle: "Curso SUS EM 50",
+    id: "Curso sus em 50",
+    triggerTitle: "Curso sus em 50",
     title: "O SUS explicado de forma clara e objetiva em aulas de 50 minutos!",
-    icon: <Hospital size={28} size={32} className="text-primary" />,
+    icon: <ShieldCheck size={32} className="text-primary" />,
     description:
-      "Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova.",
-    ctaText: "Se inscreva",
-    imageSrc: "https://picsum.photos/seed/supplements-guide/600/400",
+      "Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova..",
+    ctaText: "Saiba Sobre Suplementos",
+    imageSrc: "/assets/course-supplements.jpg",
     imageAlt: "Curso de Suplementação Inteligente",
-    dataAiHint: "supplements guide",
-  },
-  {
-    id: "Medicina Baseada em evidências",
-    triggerTitle: "Nutrição Esportiva Avançada",
-    title: "Performance Máxima: Nutrição Avançada para Atletas",
-    icon: <Activity size={32} className="text-primary" />,
-    description:
-      "Aprofunde seus conhecimentos em nutrição esportiva, estratégias de periodização nutricional, hidratação e suplementação para otimizar o rendimento.",
-    ctaText: "Maximize Sua Performance",
-    imageSrc: "https://picsum.photos/seed/sports-nutrition-advanced/600/400",
-    imageAlt: "Curso de Nutrição Esportiva Avançada",
-    dataAiHint: "sports nutrition",
-  },
-];
+    dataAiHint: "dietary supplements",
+    modules: [
+      {
+        id: "sup-mod1",
+        title: "Módulo 1: Legislaçao do SUS",
+        description: "Classificação, legislação e a importância da orientação profissional.",
+        topics: ["Constituição de 1988.", "Leis Organicas do SUS - 8.080/1990 e 8.142/1990.", "Princípios e diretrizes do SUS.", "Papel dos diferentes entes federativos (municipal, estadual e federal)."]
+      },
+      {
+        id: "sup-mod2",
+        title: "Módulo 2: SUS na pratica",
+        description: "Como interpretar rótulos, identificar produtos de qualidade e evitar armadilhas.",
+        topics: ["Níveis de prevenção em saúde", "Ecomapa e genograma", "Notificação de doenças e agravos (SINAN)."]
+      },
+       {
+        id: "sup-mod2",
+        title: "Módulo 3: SUS e epidemiologia",
+        description: "Como interpretar rótulos, identificar produtos de qualidade e evitar armadilhas.",
+        topics: ["Delineamentos de estudos epidemiológicos", "Testes diagnósticos (sensibilidade e especificidade)", "O valor preditivo positivo (VPP) e o valor preditivo negativo (VPN)."]
+      },
+    ]
+  },  
+    ]
+
+    

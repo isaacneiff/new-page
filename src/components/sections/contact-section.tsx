@@ -1,5 +1,6 @@
 import { ContactForm } from './contact-form';
 import { Mail, Phone, Instagram, Facebook, MapPin } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function ContactSection() {
   return (
@@ -26,9 +27,9 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Phone size={22} className="text-primary mt-1 shrink-0" />
+                <FaWhatsapp size={24}  className="text-primary mt-1 shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-foreground">Telefone</h4>
+                  <h4 className="font-semibold text-foreground">Whatsapp</h4>
                   <a href="https://api.whatsapp.com/send/?phone=5542999493337&text=Ol%C3%A1%21+Vi+seu+an%C3%BAncio+no+Instagram+sobre+seus+cursos+e+tenho+interesse+em+saber+mais.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" className="hover:text-primary transition-colors">
                     +55 (42) 9949-3337 {/* Placeholder */}
                   </a>

@@ -23,17 +23,18 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import type { AutoplayType } from "embla-carousel-autoplay";
-import { coursesData } from './courses-data';
+import { coursesData, type CourseModule } from './courses-data';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ListChecks, CheckCircle } from "lucide-react";
 
 export default function CoursesSection() {
   const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const autoplayPlugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnMouseEnter: true })
+    Autoplay({ delay: 7000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
-  // Effect to scroll carousel when activeIndex (controlled by Tabs) changes
   useEffect(() => {
     if (carouselApi && carouselApi.selectedScrollSnap() !== activeIndex) {
       try {
@@ -44,12 +45,10 @@ export default function CoursesSection() {
     }
   }, [activeIndex, carouselApi]);
 
-  // Effect to update activeIndex (for Tabs) when carousel selection changes
   useEffect(() => {
     if (!carouselApi) {
       return;
     }
-
     const onSelect = () => {
       const newSelectedSnap = carouselApi.selectedScrollSnap();
       if (activeIndex !== newSelectedSnap) {
@@ -57,7 +56,6 @@ export default function CoursesSection() {
       }
     };
 
-    // Initial sync: Set activeIndex from carousel's initial state
     if (carouselApi.scrollSnapList().length > 0) {
         const initialSnap = carouselApi.selectedScrollSnap();
         if (activeIndex !== initialSnap) {
@@ -66,20 +64,19 @@ export default function CoursesSection() {
     }
     
     carouselApi.on("select", onSelect);
-    carouselApi.on("reInit", onSelect); // Re-sync on re-initialization (e.g. responsive changes)
+    carouselApi.on("reInit", onSelect);
 
     return () => {
       carouselApi.off("select", onSelect);
       carouselApi.off("reInit", onSelect);
     };
-  }, [carouselApi, activeIndex, setActiveIndex]); // Include setActiveIndex for exhaustiveness, though it's stable
+  }, [carouselApi, activeIndex, setActiveIndex]);
 
   const handleTabChange = (value: string) => {
     const newIndex = coursesData.findIndex(course => course.id === value);
     if (newIndex !== -1 && newIndex !== activeIndex) {
-      setActiveIndex(newIndex); // This will trigger the useEffect to scroll the carousel
+      setActiveIndex(newIndex);
       
-      // Restart autoplay
       const autoplayControl = carouselApi?.plugins()?.autoplay as AutoplayType | undefined;
       if (autoplayControl && typeof autoplayControl.stop === 'function' && typeof autoplayControl.play === 'function') {
         autoplayControl.stop();
@@ -101,9 +98,9 @@ export default function CoursesSection() {
   const currentTabValue = (coursesData[activeIndex] && coursesData[activeIndex].id) || (coursesData[0] ? coursesData[0].id : "");
 
   return (
-    <section id="cursos" className="py-20 lg:py-32 bg-background">
+    <section id="cursos" className="py-16 lg:py-24 bg-muted">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-primary">
           Cursos Oferecidos
         </h2>
 
@@ -112,14 +109,14 @@ export default function CoursesSection() {
             <Tabs
               value={currentTabValue}
               onValueChange={handleTabChange}
-              className="mb-8 w-full max-w-8xl mx-auto"
+              className="mb-8 w-full max-w-5xl mx-auto"
             >
-              <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-10 bg-muted p-6 rounded-lg h-auto md:h-20 custom-tabs-list overflow-x-auto">
+              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-2 bg-card/80 p-2 rounded-lg h-auto md:h-24 custom-tabs-list overflow-x-auto">
                 {coursesData.map((course) => (
                   <TabsTrigger
                     key={course.id}
                     value={course.id}
-                    className="text-xs sm:text-sm px-3 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground h-auto whitespace-nowrap rounded-md flex-shrink-0"
+                    className="text-xs sm:text-sm px-3 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground h-auto whitespace-normal sm:whitespace-nowrap rounded-md flex-shrink-0 leading-tight text-center"
                   >
                     {course.triggerTitle}
                   </TabsTrigger>
@@ -127,7 +124,7 @@ export default function CoursesSection() {
               </TabsList>
             </Tabs>
 
-            <div className="w-full max-w-6xl mx-auto mt-7">
+            <div className="w-full max-w-5xl mx-auto mt-6">
               <Carousel
                 setApi={setCarouselApi}
                 opts={{
@@ -152,7 +149,7 @@ export default function CoursesSection() {
                                 style={{ objectFit: 'cover' }}
                                 className="transition-transform duration-500 hover:scale-105"
                                 data-ai-hint={course.dataAiHint}
-                                priority={index === 0} // Prioritize the first image for LCP
+                                priority={index === 0}
                               />
                             </div>
                             <div className="lg:w-3/5 flex flex-col justify-between p-6 lg:p-8">
@@ -166,15 +163,46 @@ export default function CoursesSection() {
                                   </CardTitle>
                                 </div>
                               </CardHeader>
-                              <CardContent className="p-0 flex-grow mb-4">
+                              <CardContent className="p-0 flex-grow mb-6 space-y-4">
                                 <CardDescription className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                                   {course.description}
                                 </CardDescription>
+                                
+                                {course.modules && course.modules.length > 0 && (
+                                  <div className="mt-6">
+                                    <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center">
+                                      <ListChecks size={22} className="mr-2 text-primary" />
+                                      O que o curso oferece?
+                                    </h4>
+                                    <Accordion type="single" collapsible className="w-full">
+                                      {course.modules.map((module: CourseModule) => (
+                                        <AccordionItem value={module.id} key={module.id}>
+                                          <AccordionTrigger className="text-left hover:no-underline text-base text-foreground/90">
+                                            {module.title}
+                                          </AccordionTrigger>
+                                          <AccordionContent className="space-y-2 text-sm text-muted-foreground/90">
+                                            <p>{module.description}</p>
+                                            {module.topics && module.topics.length > 0 && (
+                                              <ul className="list-inside list-none space-y-1 pl-2 mt-2">
+                                                {module.topics.map((topic, idx) => (
+                                                  <li key={idx} className="flex items-start">
+                                                    <CheckCircle size={16} className="mr-2 mt-0.5 text-primary shrink-0" />
+                                                    <span>{topic}</span>
+                                                  </li>
+                                                ))}
+                                              </ul>
+                                            )}
+                                          </AccordionContent>
+                                        </AccordionItem>
+                                      ))}
+                                    </Accordion>
+                                  </div>
+                                )}
                               </CardContent>
-                              <CardFooter className="p-0">
+                              <CardFooter className="p-0 mt-auto">
                                 <Button
                                   size="lg"
-                                  className="bg-primary hover:bg-accent text-primary-foreground text-base sm:text-lg py-2.5 sm:py-3 px-6 sm:px-8 rounded-md shadow-md transition-transform hover:scale-90"
+                                  className="bg-primary hover:bg-accent text-primary-foreground text-base sm:text-lg py-2.5 sm:py-3 px-6 sm:px-8 rounded-md shadow-md transition-transform hover:scale-105"
                                 >
                                   {course.ctaText}
                                 </Button>
@@ -186,8 +214,8 @@ export default function CoursesSection() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="hidden sm:flex" />
-                <CarouselNext className="hidden sm:flex" />
+                <CarouselPrevious className="hidden sm:flex left-[-50px]" />
+                <CarouselNext className="hidden sm:flex right-[-50px]" />
               </Carousel>
             </div>
           </>
@@ -197,3 +225,4 @@ export default function CoursesSection() {
   );
 }
 
+    
