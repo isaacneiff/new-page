@@ -1,7 +1,7 @@
 
 import type { LucideProps } from "lucide-react";
 import type { ReactElement } from "react";
-import { UtensilsCrossed, Target, Users, Brain, CalendarDays, BookOpen, HeartPulse, Leaf, ShieldCheck, Activity, Zap, Smile, GraduationCap, CookingPot, Weight, Apple, BrainCog, CalendarCheck, BookHeart, ActivitySquare, Lightbulb } from "lucide-react";
+import { BriefcaseMedical, UtensilsCrossed, Target, Users, Brain, CalendarDays, BookOpen, HeartPulse, Leaf, ShieldCheck, Activity, Zap, Smile, GraduationCap, CookingPot, Weight, Apple, BrainCog, CalendarCheck, BookHeart, ActivitySquare, Lightbulb } from "lucide-react";
 
 export interface Course {
   id: string;
@@ -21,11 +21,11 @@ export const coursesData: Course[] = [
     id: "Medicina baseada eme evidencias",
     triggerTitle: "Medicina baseada eme evidencias",
     title: "Medicina baseada eme evidencias",
-    icon: <CalendarDays size={32} className="text-primary" />,
+    icon: <BriefcaseMedical  size={32} className="text-primary" />,
     description:
       "Domine a arte de planejar suas refeições semanais. Economize tempo, dinheiro e garanta uma alimentação equilibrada e variada para toda a família.",
-    ctaText: "Saiba mais",
-    imageSrc: "https://picsum.photos/seed/meal-planning-course/600/400",
+    ctaText: "Se inscreva",
+    imageSrc: "/assets/4.jpg",
     imageAlt: "Curso de Planejamento de Refeições",
     dataAiHint: "meal planning",
   },

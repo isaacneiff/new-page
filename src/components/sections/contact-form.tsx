@@ -27,7 +27,7 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Here you would typically send the form data to a server
+    
     console.log(values);
     toast({
       title: "Mensagem Enviada!",
