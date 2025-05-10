@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
+import { CheckCheck  } from 'lucide-react';
 
 export default function AboutSection() {
   return (
@@ -20,19 +21,47 @@ export default function AboutSection() {
                 data-ai-hint="healthcare professional"
               />
             </div>
-            <div className="md:w-3/5 bg-card">
-              <CardContent className="p-8 lg:p-12">
-                <p className="text-lg text-foreground mb-4 leading-relaxed">
-                  Olá! Sou Carla, nutricionista apaixonada por ajudar pessoas a alcançarem seus objetivos de saúde e bem-estar através da alimentação. Minha missão é mostrar que comer bem pode ser prazeroso, prático e transformador.
-                </p>
-                <p className="text-foreground mb-4 leading-relaxed">
-                  Com uma abordagem individualizada e baseada em evidências científicas, desenvolvo planos alimentares personalizados que respeitam suas preferências, rotina e necessidades específicas. Acredito que a nutrição vai além de contar calorias; é sobre nutrir o corpo e a mente, promovendo uma relação saudável e equilibrada com a comida.
-                </p>
-                <p className="text-foreground leading-relaxed">
-                  Vamos juntos construir um caminho de saúde e vitalidade?
-                </p>
-              </CardContent>
-            </div>
+            <div className="md:w-3/5 bg-card display-flex flex-row justify-center">
+  <CardContent className="p-8 lg:p-12 space-y-4">
+    <div className="flex items-start gap-2">
+      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <p className="text-lg text-foreground leading-relaxed">
+        Experiência de 13 anos com docência em ensino superior voltado para cursos de saúde.
+      </p>
+    </div>
+    <div className="flex items-start gap-2">
+      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <p className="text-lg text-foreground leading-relaxed">
+        Professora do curso de medicina.
+      </p>
+    </div>
+    <div className="flex items-start gap-2">
+      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <p className="text-lg text-foreground leading-relaxed">
+        Concluiu o mestrado em Nutrição pela Universidade Federal de Santa Catarina - UFSC em 2014 com ênfase em saúde pública.
+      </p>
+    </div>
+    <div className="flex items-start gap-2">
+      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <p className="text-lg text-foreground leading-relaxed">
+        Apaixonada por "Saúde baseada em evidências".
+      </p>
+    </div>
+    <div className="flex items-start gap-2">
+      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <p className="text-lg text-foreground leading-relaxed">
+        Também atuou como tutora de especialização em atenção básica.
+      </p>
+    </div>
+    <div className="flex items-start gap-2">
+      <CheckCheck  className="w-4 h-6 text-primary mt-1" />
+      <p className="text-lg text-foreground leading-relaxed">
+        Revisora de Revistas Científicas.
+      </p>
+      
+    </div>
+  </CardContent>
+</div>
           </div>
         </Card>
       </div>
