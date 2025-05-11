@@ -31,7 +31,7 @@ export const coursesData: Course[] = [
     description:
       "Aprenda a aplicar os princípios da MBE na prática clínica diária. Desenvolva habilidades para análise crítica de estudos científicos, tomada de decisão informada e melhoria da qualidade do cuidado ao paciente. Ideal para estudantes e profissionais da saúde.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/4.jpg",
+    imageSrc: "/assets/medicina.svg",
     imageAlt: "Curso de Medicina Baseada em Evidências",
     dataAiHint: "medical research",
     modules: [
@@ -52,7 +52,7 @@ export const coursesData: Course[] = [
     description:
       "Receba orientação personalizada para sua trajetória acadêmica. Ideal para quem busca desenvolver pesquisa, publicar artigos, preparar-se para processos seletivos de mestrado/doutorado ou aprimorar habilidades didáticas.",
     ctaText: "Agende sua Mentoria",
-    imageSrc: "/assets/course-mentorship.jpg",
+    imageSrc: "/assets/mentorias.svg",
     imageAlt: "Mentorias Acadêmicas",
     dataAiHint: "mentorship",
     modules: [
@@ -69,11 +69,11 @@ export const coursesData: Course[] = [
     id: "Noções Basicas de estaticas",
     triggerTitle: "Noções Basicas de estaticas",
     title: "Desmistificando a estatística para quem precisa compreender dados com clareza!",
-    icon: <Leaf size={32} className="text-primary" />,
+    icon: <Activity  size={32} className="text-primary" />,
     description:
       "Este curso é ideal para estudantes, pesquisadores e profissionais que desejam aprender conceitos essenciais de estatística sem complicação. Você vai entender os principais cálculos, gráficos e interpretações, tornando-se mais confiante na leitura e análise de dados.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/course-vegetarian.jpg",
+    imageSrc: "/assets/nocoes-basicas.svg",
     imageAlt: "Noções Basicas de estaticas",
     dataAiHint: "notions of statistics",
     modules: [
@@ -93,8 +93,8 @@ export const coursesData: Course[] = [
     icon: <ShieldCheck size={32} className="text-primary" />,
     description:
       "Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova..",
-    ctaText: "Saiba Sobre Suplementos",
-    imageSrc: "/assets/course-supplements.jpg",
+    ctaText: "Inscreva-se Agora",
+    imageSrc: "/assets/sus-em-50.svg",
     imageAlt: "Curso de Suplementação Inteligente",
     dataAiHint: "medical research",
     modules: [
@@ -111,7 +111,7 @@ export const coursesData: Course[] = [
         topics: ["Níveis de prevenção em saúde", "Ecomapa e genograma", "Notificação de doenças e agravos (SINAN)."]
       },
        {
-        id: "sup-mod2",
+        id: "sup-mod3",
         title: "Módulo 3: SUS e epidemiologia",
         description: "Como interpretar rótulos, identificar produtos de qualidade e evitar armadilhas.",
         topics: ["Delineamentos de estudos epidemiológicos", "Testes diagnósticos (sensibilidade e especificidade)", "O valor preditivo positivo (VPP) e o valor preditivo negativo (VPN)."]

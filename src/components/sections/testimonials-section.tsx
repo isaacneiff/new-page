@@ -1,30 +1,53 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Quote } from 'lucide-react';
+import { Quote, } from 'lucide-react';
+import { Star } from 'lucide-react';
+
 
 const testimonials = [
   {
-    name: 'Ana P.',
+    name: 'Diane',
     imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial1.jpg',
-    quote: 'A Carla mudou minha relação com a comida! Aprendi a comer de forma saudável sem abrir mão do prazer. Recomendo demais!',
-    service: 'Paciente de Reeducação Alimentar',
-    dataAiHint: 'woman smiling'
+    quote: 'Carla, gostaria deixar registrado meus parabéns pelo seu trabalho! Pontual, sempre atenciosa e se colocando a disposição para responder minhas dúvidas, obrigada pelo seu auxílio, seu trabalho é impecável! E ainda, fui aprovada no tcc sem quaisquer discussão sobre resultados e meu artigo está em processo de publicação!',
+    dataAiHint: 'woman smiling',
+    service: '★★★★★' // color="#f5ee29
   },
   {
-    name: 'João S.',
+    name: 'Natalia',
     imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial2.jpg',
-    quote: 'Com o plano alimentar da Carla, consegui atingir meus objetivos na academia e melhorei muito minha performance. Excelente profissional!',
-    service: 'Paciente de Nutrição Esportiva',
+    quote: 'Agradecendo pelos seus serviços e profissionalismo. Sempre muito atenciosa e entregando os serviços dentro dos prazos. Foi muito importante pra mim ter encontrado você para me ajudar a embasar melhor meus trabalhos e isso me deu segurança para concluir os outros passos que precisava.',
+    service: '★★★★★', 
     dataAiHint: 'man smiling'
   },
   {
-    name: 'Mariana L.',
+    name: 'Carla',
     imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial3.jpg',
-    quote: 'O acompanhamento durante a gestação foi fundamental. A Carla é muito atenciosa e me passou muita segurança. Meu bebê nasceu super saudável!',
-    service: 'Paciente de Nutrição Materno-Infantil',
+    quote: 'É nítido seu amor e conhecimento pelo SUS! Obrigada por ensinar com tanta maestria.',
+    service: '★★★★★', 
     dataAiHint: 'woman happy'
   },
+  {
+    name: 'Vania',
+    imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial4.jpg',
+    quote: 'Agradecendo pelos seus serviços e profissionalismo. Sempre muito atenciosa e entregando os serviços dentro dos prazos. Foi muito importante pra mim ter encontrado você para me ajudar a embasar melhor meus trabalhos e isso me deu segurança para concluir os outros passos que precisava.',
+    service: '★★★★★', 
+    dataAiHint: 'woman happy'
+  },
+  {
+    name: 'Ricardo Faria',
+    imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial5.jpg',
+    quote: 'É uma excelente profissional e com o conteúdo na ponta da língua, sem falar que ensinar é a vocação dela, então se você adquirir o produto da Zanelatto Academy é aprendizado garantido.',
+    service: '★★★★★', 
+    dataAiHint: 'woman happy'
+  },
+  {
+    name: 'Leticia',
+    imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial6.jpg',
+    quote: 'Excelente atendimento, curso maravilhoso, super indico, pode comprar sem medo, pois os resultados são incríveis, me ajudou muito.',
+    service: '★★★★★', 
+    dataAiHint: 'woman happy'
+  }
   
 ];
 

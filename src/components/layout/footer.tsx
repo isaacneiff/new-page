@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-muted py-12 text-muted-foreground">
       <div className="container mx-auto px-4 text-center">
-        <div className="flex justify-center items-center gap-2 text-xl font-bold text-secondary mb-6">
+        <div className="flex justify-center items-center gap-2 text-xl font-bold text-secondary mb-6" style={{ color: '#b22222' }}>
           Zanelatto Academy
         </div>
         <div className="flex justify-center space-x-6 mb-6">
@@ -28,7 +28,6 @@ export default function Footer() {
           &copy; {currentYear} Zanelatto Academy. Todos os direitos reservados.
         </p>
         <p className="text-xs"><a href="https://github.com/isaacneiff" target="_blank" rel="noopener noreferrer" className="text-xs mt-2 flex justify-center flex-direction-column">
-           
           Design por Isaac.  <Github size={12} className="text-primary mt-1 shrink-0"/> 
 </a></p>
       </div>

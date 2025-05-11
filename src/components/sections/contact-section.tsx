@@ -22,7 +22,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
                   <a href="mailto:carla.nutri@email.com" className="hover:text-primary transition-colors break-all">
-                    carla.nutri@email.com
+                   zanelattoacademy@gmail.com
                   </a>
                 </div>
               </div>
@@ -39,15 +39,15 @@ export default function ContactSection() {
                 <MapPin size={22} className="text-primary mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Endereço (Atendimento Online)</h4>
-                  <p>Consultas online para todo o Brasil.</p>
+                  <p>Atendimento online para todo o Brasil.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Instagram size={22} className="text-primary mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Instagram</h4>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    @carlanutricionista {/* Placeholder */}
+                  <a href="https://www.instagram.com/zanelattoacademy/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                    @zanelattoacademy {/* Placeholder */}
                   </a>
                 </div>
               </div>
