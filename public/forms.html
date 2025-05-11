@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charSet="utf-8"/>
+  <title>Static Forms for Netlify</title>
+</head>
+<body>
+  <!-- Contact Form -->
+  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/?success=true">
+    <input type="hidden" name="form-name" value="contact" />
+    <p style="display:none;">
+      <label>
+        Don’t fill this out if you’re human: <input name="bot-field" />
+      </label>
+    </p>
+    <div>
+      <label htmlFor="name">Nome Completo:</label>
+      <input type="text" name="name" id="name" />
+    </div>
+    <div>
+      <label htmlFor="email">Email:</label>
+      <input type="email" name="email" id="email" />
+    </div>
+    <div>
+      <label htmlFor="message">Sua Mensagem:</label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+    <div>
+      <button type="submit">Enviar Mensagem</button>
+    </div>
+  </form>
+</body>
+</html>
