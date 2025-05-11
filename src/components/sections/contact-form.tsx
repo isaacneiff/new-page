@@ -26,20 +26,66 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    
-    console.log(values);
-    toast({
-      title: "Mensagem Enviada!",
-      description: "Obrigado por entrar em contato. Responderemos em breve.",
-      variant: "default", // Explicitly set variant
-    });
-    form.reset();
+  const encode = (data: Record<string, any>) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/", { // Submitting to the current page path
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...values }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Mensagem Enviada!",
+          description: "Obrigado por entrar em contato. Responderemos em breve.",
+          variant: "default",
+        });
+        form.reset();
+      } else {
+        const errorText = await response.text();
+        toast({
+          title: "Erro ao Enviar Mensagem",
+          description: `Ocorreu um problema: ${response.statusText} (${response.status}). ${errorText}`,
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Erro de Rede",
+        description: "Não foi possível enviar sua mensagem. Verifique sua conexão e tente novamente.",
+        variant: "destructive",
+      });
+      console.error("Form submission error:", error);
+    }
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form
+        name="contact" // Name of the form, should match the hidden input
+        method="POST"
+        data-netlify="true" // Enables Netlify Forms
+        data-netlify-honeypot="bot-field" // Optional: for spam protection
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-6"
+        action="/?success=true" // Fallback action for non-JS submissions or Netlify success page
+      >
+        {/* Hidden input for Netlify to identify the form */}
+        <input type="hidden" name="form-name" value="contact" />
+        
+        {/* Optional: Honeypot field for spam protection. Label should be hidden for users. */}
+        <p className="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+
         <FormField
           control={form.control}
           name="name"
