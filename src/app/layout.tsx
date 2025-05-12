@@ -5,19 +5,13 @@ import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
-// const geistSans = GeistSans({ // Incorrect: GeistSans is an object, not a function
-//   variable: '--font-geist-sans',
-//   subsets: ['latin'],
-// });
-
-// const geistMono = GeistMono({ // Incorrect: GeistMono is an object, not a function
-//   variable: '--font-geist-mono',
-//   subsets: ['latin'],
-// });
-
 export const metadata: Metadata = {
-  title: 'Carla Redesigned',
-  description: 'Landing page for Carla Nutricionista, redesigned for a modern and professional look.',
+  title: 'Zanelatto Academy',
+  description: 'Landing page for Carla Zanelatto, redesigned for a modern and professional look.',
+  icons: {
+    icon: '/assets/LOGO.svg', // Path to the favicon in the public folder
+    apple: '/assets/LOGO.svg', // Path to the apple touch icon
+  },
 };
 
 export default function RootLayout({
@@ -34,3 +28,4 @@ export default function RootLayout({
     </html>
   );
 }
+
