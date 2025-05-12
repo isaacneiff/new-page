@@ -4,28 +4,23 @@ import { Scale, Leaf, Dumbbell, Baby } from 'lucide-react';
 const services = [
   {
     icon: <Scale size={36} className="text-primary" />,
-    title: 'Nutrição Clínica',
-    description: 'Avaliação completa do estado nutricional, histórico de saúde e hábitos alimentares para elaboração de planos alimentares individualizados, visando a prevenção e tratamento de doenças.',
-    dataAiHint: 'medical scale'
+    title: 'Mentorias individuais',
+    description: ' Encontros personalizados com a Dra. Carla, focados nas suas metas, desafios e crescimento pessoal ou profissional. Um espaço seguro para reflexões profundas, planejamento estratégico e desenvolvimento de habilidades com acompanhamento individualizado.',
+    dataAiHint: 'mentoring'
+  },
+  {
+    icon: <Scale size={36} className="text-primary" />,
+    title: 'Mentorias em Grupos',
+    description: 'Sessões em grupo conduzidas pela Dra. Carla que promovem aprendizado coletivo, troca de experiências e apoio mútuo. Ideal para quem busca crescer em conjunto, ampliar perspectivas e desenvolver competências com o suporte de uma comunidade engajada.',
+    dataAiHint: 'mentoring'
   },
   {
     icon: <Leaf size={36} className="text-primary" />,
-    title: 'Reeducação Alimentar',
-    description: 'Orientação para escolhas alimentares conscientes e saudáveis, promovendo mudanças duradouras no comportamento alimentar e melhorando a relação com a comida.',
-    dataAiHint: 'green leaf'
+    title: 'Cursos sobre Saúde',
+    description: 'Capacitações criadas pela Dra. Carla para quem busca se destacar nos estudos e no trabalho. Com conteúdos práticos e reflexivos, os cursos abordam temas como organização, foco, propósito, produtividade e transição de carreira.',
+    dataAiHint: 'health'
   },
-  {
-    icon: <Dumbbell size={36} className="text-primary" />,
-    title: 'Nutrição Esportiva',
-    description: 'Planos alimentares específicos para atletas e praticantes de atividade física, visando otimizar o desempenho, recuperação e composição corporal.',
-    dataAiHint: 'fitness dumbbell'
-  },
-  {
-    icon: <Baby size={36} className="text-primary" />,
-    title: 'Nutrição Materno-Infantil',
-    description: 'Acompanhamento nutricional para gestantes, lactantes, bebês e crianças, garantindo o desenvolvimento saudável e prevenindo deficiências nutricionais.',
-    dataAiHint: 'mother child'
-  },
+
 ];
 
 export default function ServicesSection() {
