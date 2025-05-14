@@ -31,7 +31,7 @@ export const coursesData: Course[] = [
     description:
       "Aprenda a aplicar os princípios da MBE na prática clínica diária. Desenvolva habilidades para análise crítica de estudos científicos, tomada de decisão informada e melhoria da qualidade do cuidado ao paciente. Ideal para estudantes e profissionais da saúde.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/course-mbe.jpg",
+    imageSrc: "/assets/medicina.jpg", // Updated image
     imageAlt: "Curso de Medicina Baseada em Evidências",
     dataAiHint: "medical research",
     modules: [
@@ -63,7 +63,7 @@ export const coursesData: Course[] = [
     description:
       "Receba orientação personalizada para sua trajetória acadêmica. Ideal para quem busca desenvolver pesquisa, publicar artigos, preparar-se para processos seletivos de mestrado/doutorado ou aprimorar habilidades didáticas.",
     ctaText: "Agende sua Mentoria",
-    imageSrc: "/assets/course-mentorship.jpg",
+    imageSrc: "/assets/mentorias.jpg", // Updated image
     imageAlt: "Mentorias Acadêmicas",
     dataAiHint: "academic guidance",
     modules: [
@@ -95,9 +95,9 @@ export const coursesData: Course[] = [
     description:
       "Descubra como montar uma dieta vegetariana/vegana completa, nutritiva e saborosa, garantindo todos os nutrientes essenciais para sua saúde e bem-estar. Desmistifique mitos e aprenda sobre suplementação consciente.",
     ctaText: "Explore o Vegetarianismo",
-    imageSrc: "/assets/course-vegetarian.jpg",
-    imageAlt: "Curso de Nutrição Vegetariana",
-    dataAiHint: "vegetarian food",
+    imageSrc: "/assets/nocoes-basicas.jpg", // Updated image
+    imageAlt: "Imagem do curso sobre noções básicas de nutrição", // Updated alt
+    dataAiHint: "learning basics", // Updated hint
     modules: [
       {
         id: "veg-mod1",
@@ -121,9 +121,9 @@ export const coursesData: Course[] = [
     description:
       "Entenda quando e como utilizar suplementos alimentares de forma segura e eficaz. Baseado em evidências científicas, este curso aborda os principais tipos de suplementos, suas indicações, riscos e benefícios para diferentes objetivos.",
     ctaText: "Saiba Sobre Suplementos",
-    imageSrc: "/assets/course-supplements.jpg",
-    imageAlt: "Curso de Suplementação Inteligente",
-    dataAiHint: "dietary supplements",
+    imageSrc: "/assets/sus-em-50.jpg", // Updated image
+    imageAlt: "Imagem do curso sobre SUS e saúde", // Updated alt
+    dataAiHint: "public health", // Updated hint
     modules: [
       {
         id: "sup-mod1",
@@ -244,5 +244,3 @@ export const coursesData: Course[] = [
     ]
   },
 ];
-
-    
