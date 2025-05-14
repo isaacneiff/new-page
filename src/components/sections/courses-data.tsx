@@ -31,7 +31,7 @@ export const coursesData: Course[] = [
     description:
       "Aprenda a aplicar os princípios da MBE na prática clínica diária. Desenvolva habilidades para análise crítica de estudos científicos, tomada de decisão informada e melhoria da qualidade do cuidado ao paciente. Ideal para estudantes e profissionais da saúde.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/medicina.jpg",
+    imageSrc: "/assets/medicina.svg",
     imageAlt: "Curso de Medicina Baseada em Evidências",
     dataAiHint: "medical research",
     modules: [
@@ -63,7 +63,7 @@ export const coursesData: Course[] = [
     description:
       "Receba orientação personalizada para sua trajetória acadêmica. Ideal para quem busca desenvolver pesquisa, publicar artigos, preparar-se para processos seletivos de mestrado/doutorado ou aprimorar habilidades didáticas.",
     ctaText: "Agende sua Mentoria",
-    imageSrc: "/assets/mentorias.jpg",
+    imageSrc: "/assets/mentorias.svg",
     imageAlt: "Mentorias Acadêmicas",
     dataAiHint: "academic guidance",
     modules: [
@@ -95,7 +95,7 @@ export const coursesData: Course[] = [
     description:
       "Descubra como montar uma dieta vegetariana/vegana completa, nutritiva e saborosa, garantindo todos os nutrientes essenciais para sua saúde e bem-estar. Desmistifique mitos e aprenda sobre suplementação consciente.",
     ctaText: "Explore o Vegetarianismo",
-    imageSrc: "/assets/nocoes-basicas.jpg",
+    imageSrc: "/assets/nocoes-basicas.svg",
     imageAlt: "Imagem do curso sobre noções básicas de nutrição",
     dataAiHint: "learning basics",
     modules: [
@@ -121,7 +121,7 @@ export const coursesData: Course[] = [
     description:
       "Entenda quando e como utilizar suplementos alimentares de forma segura e eficaz. Baseado em evidências científicas, este curso aborda os principais tipos de suplementos, suas indicações, riscos e benefícios para diferentes objetivos.",
     ctaText: "Saiba Sobre Suplementos",
-    imageSrc: "/assets/sus-em-50.jpg",
+    imageSrc: "/assets/sus-em-50.svg",
     imageAlt: "Imagem do curso sobre SUS e saúde",
     dataAiHint: "public health",
     modules: [

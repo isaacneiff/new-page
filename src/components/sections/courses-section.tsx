@@ -142,11 +142,11 @@ export default function CoursesSection() {
                           <div className="lg:flex h-full">
                             <div className="lg:w-2/5 relative h-64 lg:h-auto min-h-[300px] lg:min-h-[450px]">
                               <Image
-                                src={course.imageSrc || `https://picsum.photos/seed/${course.id}/600/400`}
+                                src={course.imageSrc || `https://placehold.co/600x400.png`}
                                 alt={course.imageAlt}
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }} // Alterado de 'cover' para 'contain'
                                 className="transition-transform duration-500 hover:scale-105"
                                 data-ai-hint={course.dataAiHint}
                                 priority={index === 0}
