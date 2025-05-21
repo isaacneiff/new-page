@@ -67,12 +67,12 @@ export const coursesData: Course[] = [
   },
   {
     id: "Noções Basicas de estaticas",
-    triggerTitle: "Noções Basicas de estaticas",
+    triggerTitle: "Noções Basicas de estasticas",
     title: "Desmistificando a estatística para quem precisa compreender dados com clareza!",
     icon: <Activity  size={32} className="text-primary" />,
     description:
       "Este curso é ideal para estudantes, pesquisadores e profissionais que desejam aprender conceitos essenciais de estatística sem complicação. Você vai entender os principais cálculos, gráficos e interpretações, tornando-se mais confiante na leitura e análise de dados.",
-    ctaText: "Inscreva-se Agora",
+    ctaText: "Vagas em Breve",
     imageSrc: "/assets/nocoes-basicas.svg",
     imageAlt: "Noções Basicas de estaticas",
     dataAiHint: "notions of statistics",
