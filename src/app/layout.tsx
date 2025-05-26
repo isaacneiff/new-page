@@ -7,10 +7,9 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'Zanelatto Academy',
-  description: 'Landing page for Carla Zanelatto, redesigned for a modern and professional look.',
   icons: {
-    icon: '/assets/LOGO.svg', // Path to the favicon in the public folder
-    apple: '/assets/LOGO.svg', // Path to the apple touch icon
+    icon: '/assets/LOGO.svg', 
+    apple: '/assets/LOGO.svg', 
   },
 };
 

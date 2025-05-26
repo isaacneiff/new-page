@@ -44,19 +44,19 @@ export default function AboutSection() {
                 <div className="flex items-start gap-3">
                   <CheckCheck size={24} className="text-primary mt-1 shrink-0" />
                   <p className="text-lg text-foreground leading-relaxed">
+                    Doutora em Saúde Coletiva pela UFSC em 2018 na área de Epidemiologia.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCheck size={24} className="text-primary mt-1 shrink-0" />
+                  <p className="text-lg text-foreground leading-relaxed">
                     Apaixonada por "Saúde baseada em evidências".
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCheck size={24} className="text-primary mt-1 shrink-0" />
                   <p className="text-lg text-foreground leading-relaxed">
-                    Também atuou como tutora de especialização em atenção básica.
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCheck size={24} className="text-primary mt-1 shrink-0" />
-                  <p className="text-lg text-foreground leading-relaxed">
-                    Revisora de Revistas Científicas.
+                    Também atuou como tutora de especialização e residência em Atenção Básica.
                   </p>
                 </div>
               </CardContent>

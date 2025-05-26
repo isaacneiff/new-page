@@ -21,7 +21,7 @@ export default function ContactSection() {
                 <Mail size={22} className="text-primary mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:carla.nutri@email.com" className="hover:text-primary transition-colors break-all">
+                  <a href="mail.to:zanelattoacademy@gmail.com" className="hover:text-primary transition-colors break-all">
                    zanelattoacademy@gmail.com
                   </a>
                 </div>
@@ -55,8 +55,8 @@ export default function ContactSection() {
                 <Facebook size={22} className="text-primary mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Facebook</h4>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    /carlanutricionista {/* Placeholder */}
+                  <a href="https://www.facebook.com/share/1E9wYHEGY2/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                    Zanelatto Academy {/* Placeholder */}
                   </a>
                 </div>
               </div>

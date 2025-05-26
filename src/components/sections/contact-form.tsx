@@ -68,13 +68,13 @@ export function ContactForm() {
   return (
     <Form {...form}>
       <form
-        name="contact" // Name of the form, should match the hidden input
+        name="contact" 
         method="POST"
-        data-netlify="true" // Enables Netlify Forms
-        data-netlify-honeypot="bot-field" // Optional: for spam protection
+        data-netlify="true" 
+        data-netlify-honeypot="bot-field" 
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-6"
-        action="/?success=true" // Fallback action for non-JS submissions or Netlify success page
+        action="/?success=true" 
       >
         {/* Hidden input for Netlify to identify the form */}
         <input type="hidden" name="form-name" value="contact" />

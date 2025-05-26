@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
     <section id="depoimentos" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary" style={{ color: '#1e2a36' }}>
-          O Que Meus Pacientes Dizem
+          O Que Meus Clientes Dizem
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (

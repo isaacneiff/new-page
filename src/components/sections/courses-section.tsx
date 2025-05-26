@@ -109,9 +109,9 @@ export default function CoursesSection() {
             <Tabs
               value={currentTabValue}
               onValueChange={handleTabChange}
-              className="mb-8 w-full max-w-5xl mx-auto"
+              className="mb-8 w-full max-w-5xl mx-auto flex items-center justify-center align-center"
             >
-              <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-2 bg-card/80 p-2 rounded-lg h-auto md:h-24 custom-tabs-list overflow-x-auto">
+              <TabsList className="grid w-full grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2 bg-card/80 p-2 rounded-lg h-auto md:h-24 custom-tabs-list overflow-x-auto">
                 {coursesData.map((course) => (
                   <TabsTrigger
                     key={course.id}

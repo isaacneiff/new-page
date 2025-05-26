@@ -15,7 +15,7 @@ export default function HeroSection() {
           Transforme sua visão sobre saúde com a Dra. Carla Zanelatto
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md">
-          Veja a saúde com outros olhos — venha para a Zanelatto Academy.
+          Com a expertise da Dra. Carla Zanelatto, a Zanelatto Academy conecta Saúde, estratégia e ciência. Mentorias, cursos em SUS e consultoria estatística para sua aprovação com excelência.
         </p>
         <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground rounded-full px-10 py-6 text-lg font-semibold shadow-lg transition-transform hover:scale-105">
           <Link href="#contato">Agende um Horário</Link>

@@ -24,99 +24,67 @@ export interface Course {
 
 export const coursesData: Course[] = [
   {
-    id: "medicina-baseada-evidencias",
-    triggerTitle: "Medicina Baseada em Evidências",
-    title: "Para professores e profissionais de saúde que querem interpretar e aplicar ciência com confiança!",
-    icon: <Microscope size={32} className="text-primary" />,
+    id: "Curso-sus-em-50",
+    triggerTitle: "Curso SUS em 50",
+    title: "O SUS explicado de forma clara e objetiva em aulas de 50 minutos!",
+    icon: <ShieldCheck size={32} className="text-primary" />,
     description:
-      "Aprenda a aplicar os princípios da MBE na prática clínica diária. Desenvolva habilidades para análise crítica de estudos científicos, tomada de decisão informada e melhoria da qualidade do cuidado ao paciente. Ideal para estudantes e profissionais da saúde.",
+      " Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/medicina.svg",
+    imageSrc: "/assets/sus-em-50.svg",
     imageAlt: "Curso de Medicina Baseada em Evidências",
     dataAiHint: "medical research",
     modules: [
       {
         id: "mbe-mod1",
         title: "Clique e saiba mais.",
-        description: "Aulas interativas e ao vivo.",
-        topics: ["Introdução a medicina baseada em evidências", "Aplicação das evidências na prática clínica e no ensino.", "Noções de bioestatística para interpretação de estudos científicos","Material de apoio e certificado de conclusão."]
+        description: "Aulas de 50 minutos, diretas e organizadas por tema",
+        topics: ["Resumos estratégicos.", "Simulados e questões comentadas."]
       },
      
     ],
   },
   {
-    id: "mentorias-academicas",
-    triggerTitle: "Mentorias",
-    title: "Mentorias Individuais e em Grupo para Carreira Acadêmica",
-    icon: <Users2 size={32} className="text-primary" />,
+    id: "Noções-Básicas-de-Estatística",
+    triggerTitle: "Noções Básicas de Estatística",
+    title: "Desmistificando a estatística para quem precisa compreender dados com clareza!",
+    icon: <Activity size={32} className="text-primary" />,
     description:
-      "Receba orientação personalizada para sua trajetória acadêmica. Ideal para quem busca desenvolver pesquisa, publicar artigos, preparar-se para processos seletivos de mestrado/doutorado ou aprimorar habilidades didáticas.",
-    ctaText: "Agende sua Mentoria",
-    imageSrc: "/assets/mentorias.svg",
+      "Este curso é ideal para estudantes, pesquisadores e profissionais que desejam aprender conceitos essenciais de estatística sem complicação. Você vai entender os principais cálculos, gráficos e interpretações, tornando-se mais confiante na leitura e análise de dados.",
+    ctaText: "Vagas em Breve!",
+    imageSrc: "/assets/nocoes-basicas.svg",
     imageAlt: "Mentorias Acadêmicas",
     dataAiHint: "mentorship",
     modules: [
       {
         id: "mentor-mod1",
-        title: "Módulo 1: Planejamento de Carreira Acadêmica",
-        description: "Definição de metas, identificação de oportunidades e estratégias para progressão na carreira.",
-        topics: ["Construção de currículo Lattes", "Networking acadêmico", "Editais e fomentos"]
+        title: "Clique e saiba mais.",
+        description: "",
+        topics: ["Introdução à estatística descritiva e inferencial", "Como interpretar gráficos, tabelas e distribuições de dados", "Conceitos essenciais: média, mediana, desvio padrão e mais", "Aplicação prática para estudos e pesquisa", "Material de apoio e certificado de conclusão" ]
       }
      
     ],
   },
   {
-    id: "Noções Basicas de estaticas",
-    triggerTitle: "Noções Basicas de estaticas",
-    title: "Desmistificando a estatística para quem precisa compreender dados com clareza!",
-    icon: <Activity  size={32} className="text-primary" />,
+    id: "Mentoria Individual ou Coletiva para Residência Médica e Concursos Públicos na Área de Saúde Pública",
+    triggerTitle: "Mentorias",
+    title: "Estude com estratégia, suporte especializado e um ótimo custo-benefício!!",
+    icon: <Users2  size={32} className="text-primary" />,
     description:
-      "Este curso é ideal para estudantes, pesquisadores e profissionais que desejam aprender conceitos essenciais de estatística sem complicação. Você vai entender os principais cálculos, gráficos e interpretações, tornando-se mais confiante na leitura e análise de dados.",
+      "Com nossa mentoria, você terá acesso a um plano de estudos bem estruturado, análise de provas anteriores e acompanhamento para otimizar sua preparação.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/nocoes-basicas.svg",
+    imageSrc: "/assets/mentorias.svg",
     imageAlt: "Noções Basicas de estaticas",
     dataAiHint: "notions of statistics",
     modules: [
       {
         id: "Noções Basicas de estaticas-mod1",
         title: "Clique e saiba mais.",
-        description: "Aulas interativas e ao vivo.",
-        topics: ["Noções de bioestatística para interpretação de estudos científicos", "Aplicação das evidências na prática clínica e no ensino.", "Material de apoio e certificado de conclusão."]
+        description: "Aulas ao vivo e interativas para aprofundar temas e esclarecer dúvidas",
+        topics: ["Conteúdos essenciais e atualizados", "Análise de editais e direcionamento do estudo", "Resolução comentada de questões", "Técnicas para melhorar desempenho nas provas"]
       },
 
     ],
-  },
-  {
-    id: "Curso sus em 50",
-    triggerTitle: "Curso sus em 50",
-    title: "O SUS explicado de forma clara e objetiva em aulas de 50 minutos!",
-    icon: <ShieldCheck size={32} className="text-primary" />,
-    description:
-      "Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova..",
-    ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/sus-em-50.svg",
-    imageAlt: "Curso de Suplementação Inteligente",
-    dataAiHint: "medical research",
-    modules: [
-      {
-        id: "sup-mod1",
-        title: "Módulo 1: Legislaçao do SUS",
-        description: "Classificação, legislação e a importância da orientação profissional.",
-        topics: ["Constituição de 1988.", "Leis Organicas do SUS - 8.080/1990 e 8.142/1990.", "Princípios e diretrizes do SUS.", "Papel dos diferentes entes federativos (municipal, estadual e federal)."]
-      },
-      {
-        id: "sup-mod2",
-        title: "Módulo 2: SUS na pratica",
-        description: "Como interpretar rótulos, identificar produtos de qualidade e evitar armadilhas.",
-        topics: ["Níveis de prevenção em saúde", "Ecomapa e genograma", "Notificação de doenças e agravos (SINAN)."]
-      },
-       {
-        id: "sup-mod3",
-        title: "Módulo 3: SUS e epidemiologia",
-        description: "Como interpretar rótulos, identificar produtos de qualidade e evitar armadilhas.",
-        topics: ["Delineamentos de estudos epidemiológicos", "Testes diagnósticos (sensibilidade e especificidade)", "O valor preditivo positivo (VPP) e o valor preditivo negativo (VPN)."]
-      },
-    ]
   },  
     ]
 

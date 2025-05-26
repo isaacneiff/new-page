@@ -11,16 +11,16 @@ export default function Footer() {
           Zanelatto Academy
         </div>
         <div className="flex justify-center space-x-6 mb-6">
-          <a href="mailto:carla.nutri@email.com" aria-label="Email" className="hover:text-primary transition-colors">
+          <a href="mailto:zanelattoacademy@gmail.com" aria-label="Email" className="hover:text-primary transition-colors">
             <Mail size={24} />
           </a>
           <a href="https://api.whatsapp.com/send/?phone=5542999493337&text=Ol%C3%A1%21+Vi+seu+an%C3%BAncio+no+Instagram+sobre+seus+cursos+e+tenho+interesse+em+saber+mais.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" aria-label="Telefone" className="hover:text-primary transition-colors">
              <FaWhatsapp size={24} />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-primary transition-colors">
+          <a href="https://www.instagram.com/zanelattoacademy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-primary transition-colors">
             <Instagram size={24} />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-primary transition-colors">
+          <a href="https://www.facebook.com/share/1E9wYHEGY2/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-primary transition-colors">
             <Facebook size={24} />
           </a>
         </div>
