@@ -74,6 +74,7 @@ export const coursesData: Course[] = [
       "Com nossa mentoria, você terá acesso a um plano de estudos bem estruturado, análise de provas anteriores e acompanhamento para otimizar sua preparação.",
     ctaText: "Inscreva-se Agora",
     imageSrc: "/assets/mentorias.svg",
+
     imageAlt: "Noções Basicas de estaticas",
     dataAiHint: "notions of statistics",
     modules: [
