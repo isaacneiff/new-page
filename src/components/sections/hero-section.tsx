@@ -6,8 +6,13 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('/assets/hero.svg')" }}
+      className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden"
+      style={{
+        backgroundImage: "url('/assets/LOGO.svg')",
+        backgroundSize: 'contain', // Garante que o logo inteiro seja visível
+        backgroundRepeat: 'no-repeat', // Evita repetição do logo
+        backgroundPosition: 'center center' // Centraliza o logo
+      }}
     >
       <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay */}
       <div className="relative z-20 container mx-auto px-4 py-16">
@@ -24,4 +29,3 @@ export default function HeroSection() {
     </section>
   );
 }
-

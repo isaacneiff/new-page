@@ -35,12 +35,7 @@ export default function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled ? "bg-card shadow-md py-4" : "bg-transparent py-6"
       )}
-      style={{
-        backgroundImage: "url('/assets/LOGO.svg')",
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: 'contain', // You can adjust this to 'cover' or a specific size if needed
-      }}
+      // Removido o style que aplicava LOGO.svg como background do header
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
@@ -79,8 +74,8 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-card p-6">
               <div className="flex justify-between items-center mb-8">
-                <Link 
-                  href="#home" 
+                <Link
+                  href="#home"
                   aria-label="Zanelatto Academy"
                   className="text-xl font-bold text-primary"
                   onClick={() => setIsMobileMenuOpen(false)}
