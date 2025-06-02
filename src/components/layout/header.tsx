@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X } from 'lucide-react'; // Removed Leaf as it's not used here
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -33,12 +33,24 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-card shadow-md py-4" : "bg-transparent py-6" // Original design had white navbar, bg-card is white
+        isScrolled ? "bg-card shadow-md py-4" : "bg-transparent py-6"
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#home" className={cn("flex items-center gap-2 text-2xl font-bold transition-colors", isScrolled ? "text-secondary" : "text-white hover:text-muted" )}>
-          Zanelatto Academy
+        <Link
+          href="#home"
+          aria-label="Zanelatto Academy"
+          className="block" // Changed from flex, removed text styling
+          style={{
+            width: '180px', // Adjust width as per logo's aspect ratio and desired size
+            height: '40px', // Adjust height to fit well within header padding
+            backgroundImage: "url('/assets/LOGO.svg')",
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'contain',
+          }}
+        >
+          <span className="sr-only">Zanelatto Academy</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -65,11 +77,24 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-card p-6">
               <div className="flex justify-between items-center mb-8">
-                <Link href="#home" className="flex items-center gap-2 text-xl font-bold text-secondary" onClick={() => setIsMobileMenuOpen(false)}>
-                  Zanelatto Academy
+                <Link 
+                  href="#home" 
+                  aria-label="Zanelatto Academy"
+                  className="block" // Changed from flex, removed text styling
+                  style={{
+                    width: '150px', // Adjust width for mobile sheet if needed
+                    height: '35px',  // Adjust height for mobile sheet if needed
+                    backgroundImage: "url('/assets/LOGO.svg')",
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                  }}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                   <span className="sr-only">Zanelatto Academy</span>
                 </Link>
                 <SheetClose asChild>
-                   <Button size="icon">
+                   <Button variant="ghost" size="icon"> {/* Changed to ghost for consistency */}
                     <X className="h-6 w-6 text-foreground" />
                     <span className="sr-only">Fechar menu</span>
                   </Button>
