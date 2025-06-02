@@ -14,7 +14,7 @@ export default function HeroSection() {
         backgroundPosition: 'center center' // Centraliza o logo
       }}
     >
-      <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay */}
+      <div className="absolute inset-0 bg-primary/60 z-10"></div> {/* Overlay changed to primary color with 60% opacity */}
       <div className="relative z-20 container mx-auto px-4 py-16">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
           Transforme sua vida com uma nutrição personalizada
