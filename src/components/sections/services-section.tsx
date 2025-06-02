@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Scale, Leaf, Dumbbell, Baby } from 'lucide-react';
+import { Scale, Leaf, Dumbbell, Hospital } from 'lucide-react';
 
 const services = [
   {
@@ -15,7 +15,7 @@ const services = [
     dataAiHint: 'mentoring'
   },
   {
-    icon: <Leaf size={36} className="text-primary" />,
+    icon: <Hospital size={36} className="text-primary" />,
     title: 'Cursos sobre Saúde Pública e Evidências',
     description: 'Capacitações desenvolvidas pela Dra. Carla Zanelatto para quem se prepara para provas, residência médica e concursos. Com foco em SUS e Medicina Baseada em Evidências, os cursos oferecem conteúdos claros, atualizados e voltados para a prática e a aprovação.',
     dataAiHint: 'health'

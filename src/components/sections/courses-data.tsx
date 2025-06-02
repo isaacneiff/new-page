@@ -29,7 +29,7 @@ export const coursesData: Course[] = [
     title: "O SUS explicado de forma clara e objetiva em aulas de 50 minutos!",
     icon: <ShieldCheck size={32} className="text-primary" />,
     description:
-      " Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova.",
+      "Este curso foi desenvolvido para quem precisa de um estudo estratégico sobre o Sistema Único de Saúde. Ideal para Revalida, concursos públicos e residência médica, traz os temas mais cobrados de forma didática e aprofundada, sem perder tempo com o que não cai na prova.",
     ctaText: "Inscreva-se Agora",
     imageSrc: "/assets/sus-em-50.svg",
     imageAlt: "Curso de Medicina Baseada em Evidências",
@@ -84,7 +84,6 @@ export const coursesData: Course[] = [
         description: "Aulas ao vivo e interativas para aprofundar temas e esclarecer dúvidas",
         topics: ["Conteúdos essenciais e atualizados", "Análise de editais e direcionamento do estudo", "Resolução comentada de questões", "Técnicas para melhorar desempenho nas provas"]
       },
-
     ],
   },  
     ]
