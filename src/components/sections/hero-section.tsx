@@ -30,7 +30,7 @@ export default function HeroSection() {
         <p className="text-lg sm:text-xl md:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md">
           Descubra como uma alimentação equilibrada pode trazer mais saúde, bem-estar e energia para o seu dia a dia.
         </p>
-        <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground rounded-full px-10 py-6 text-lg font-semibold shadow-lg transition-transform hover:scale-105">
+        <Button asChild size="lg" className="bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-full px-10 py-6 text-lg font-semibold shadow-lg transition-transform hover:scale-105">
           <Link href="#contato">Agende sua Consulta</Link>
         </Button>
       </div>
