@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react'; // Removed Leaf as it's not used here
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -35,21 +35,23 @@ export default function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled ? "bg-card shadow-md py-4" : "bg-transparent py-6"
       )}
+      style={{
+        backgroundImage: "url('/assets/LOGO.svg')",
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center',
+        backgroundSize: 'contain', // You can adjust this to 'cover' or a specific size if needed
+      }}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
           href="#home"
           aria-label="Zanelatto Academy"
-          className="block" // Changed from flex, removed text styling
-          style={{
-            width: '180px', // Adjust width as per logo's aspect ratio and desired size
-            height: '40px', // Adjust height to fit well within header padding
-            backgroundImage: "url('/assets/LOGO.svg')",
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            backgroundSize: 'contain',
-          }}
+          className={cn(
+            "text-2xl font-bold transition-colors",
+            isScrolled ? "text-primary" : "text-white hover:text-muted-foreground/80"
+          )}
         >
+          Zanelatto Academy
           <span className="sr-only">Zanelatto Academy</span>
         </Link>
 
@@ -80,21 +82,14 @@ export default function Header() {
                 <Link 
                   href="#home" 
                   aria-label="Zanelatto Academy"
-                  className="block" // Changed from flex, removed text styling
-                  style={{
-                    width: '150px', // Adjust width for mobile sheet if needed
-                    height: '35px',  // Adjust height for mobile sheet if needed
-                    backgroundImage: "url('/assets/LOGO.svg')",
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                  }}
+                  className="text-xl font-bold text-primary"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
+                   Zanelatto Academy
                    <span className="sr-only">Zanelatto Academy</span>
                 </Link>
                 <SheetClose asChild>
-                   <Button variant="ghost" size="icon"> {/* Changed to ghost for consistency */}
+                   <Button variant="ghost" size="icon">
                     <X className="h-6 w-6 text-foreground" />
                     <span className="sr-only">Fechar menu</span>
                   </Button>
