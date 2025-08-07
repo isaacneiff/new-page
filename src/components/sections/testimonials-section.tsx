@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -6,21 +7,21 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Ana P.',
-    imageSrc: 'https://placehold.co/100x100.png',
+    imageSrc: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     quote: 'A Juliana mudou minha relação com a comida! Aprendi a comer de forma saudável sem abrir mão do prazer. Recomendo demais!',
     service: 'Paciente de Reeducação Alimentar',
     dataAiHint: 'woman smiling'
   },
   {
     name: 'João S.',
-    imageSrc: 'https://placehold.co/100x100.png',
+    imageSrc: 'https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     quote: 'Com o plano alimentar da Juliana, consegui atingir meus objetivos na academia e melhorei muito minha performance. Excelente profissional!',
     service: 'Paciente de Nutrição Esportiva',
     dataAiHint: 'man smiling'
   },
   {
     name: 'Mariana L.',
-    imageSrc: 'https://placehold.co/100x100.png',
+    imageSrc: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     quote: 'O acompanhamento durante a gestação foi fundamental. A Juliana é muito atenciosa e me passou muita segurança. Meu bebê nasceu super saudável!',
     service: 'Paciente de Nutrição Materno-Infantil',
     dataAiHint: 'woman happy'

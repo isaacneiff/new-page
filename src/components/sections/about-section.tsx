@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCheck } from 'lucide-react';
@@ -13,7 +14,7 @@ export default function AboutSection() {
           <div className="md:flex">
             <div className="md:w-2/5 relative min-h-[350px] md:min-h-0">
               <Image
-                src="https://placehold.co/600x800.png"
+                src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Juliana, a nutricionista"
                 layout="fill"
                 objectFit="cover"

@@ -13,7 +13,7 @@ export default function HeroSection() {
       {/* Container para a imagem, posicionada sobre o fundo da seção */}
       <div className="absolute inset-0 z-10 flex items-center justify-center p-4 md:p-8"> {/* Padding para evitar que o logo cole nas bordas */}
         <Image
-          src="https://placehold.co/400x400.png"
+          src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg"
           alt="NutriLife Academia Logo"
           layout="fill"
           objectFit="contain"

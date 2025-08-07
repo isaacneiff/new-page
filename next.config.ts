@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
   images: {
     loader: 'default',
     path: '/_next/image',
-    domains: ['picsum.photos', 'isaacneiff.github.io', 'localhost', 'placehold.co'],
+    domains: ['picsum.photos', 'isaacneiff.github.io', 'localhost', 'placehold.co', 'images.pexels.com', 'static.pexels.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -35,6 +35,18 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.pexels.com',
         port: '',
         pathname: '/**',
       }
