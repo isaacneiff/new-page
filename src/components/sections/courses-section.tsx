@@ -146,7 +146,7 @@ export default function CoursesSection() {
                                 alt={course.imageAlt}
                                 fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"
-                                style={{ objectFit: 'contain' }} // Alterado de 'cover' para 'contain'
+                                style={{ objectFit: 'cover' }}
                                 className="transition-transform duration-500 hover:scale-105"
                                 data-ai-hint={course.dataAiHint}
                                 priority={index === 0}
