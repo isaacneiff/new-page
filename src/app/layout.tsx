@@ -6,11 +6,11 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Carla Redesigned',
-  description: 'Landing page for Carla Nutricionista, redesigned for a modern and professional look.',
+  title: 'NutriLife Academia',
+  description: 'Landing page para NutriLife Academia, redesenhado para um visual moderno e profissional.',
   icons: {
-    icon: '/assets/LOGO.svg', // Path to the favicon in the public folder
-    apple: '/assets/LOGO.svg', // Path to the apple touch icon
+    icon: 'https://placehold.co/32x32.png', // Placeholder for favicon
+    apple: 'https://placehold.co/180x180.png', // Placeholder for apple touch icon
   },
 };
 
@@ -28,4 +28,3 @@ export default function RootLayout({
     </html>
   );
 }
-

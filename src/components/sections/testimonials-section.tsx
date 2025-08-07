@@ -6,22 +6,22 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Ana P.',
-    imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial1.jpg',
-    quote: 'A Carla mudou minha relação com a comida! Aprendi a comer de forma saudável sem abrir mão do prazer. Recomendo demais!',
+    imageSrc: 'https://placehold.co/100x100.png',
+    quote: 'A Juliana mudou minha relação com a comida! Aprendi a comer de forma saudável sem abrir mão do prazer. Recomendo demais!',
     service: 'Paciente de Reeducação Alimentar',
     dataAiHint: 'woman smiling'
   },
   {
     name: 'João S.',
-    imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial2.jpg',
-    quote: 'Com o plano alimentar da Carla, consegui atingir meus objetivos na academia e melhorei muito minha performance. Excelente profissional!',
+    imageSrc: 'https://placehold.co/100x100.png',
+    quote: 'Com o plano alimentar da Juliana, consegui atingir meus objetivos na academia e melhorei muito minha performance. Excelente profissional!',
     service: 'Paciente de Nutrição Esportiva',
     dataAiHint: 'man smiling'
   },
   {
     name: 'Mariana L.',
-    imageSrc: 'https://isaacneiff.github.io/landing-page-Carla/testegpt/assets/testimonial3.jpg',
-    quote: 'O acompanhamento durante a gestação foi fundamental. A Carla é muito atenciosa e me passou muita segurança. Meu bebê nasceu super saudável!',
+    imageSrc: 'https://placehold.co/100x100.png',
+    quote: 'O acompanhamento durante a gestação foi fundamental. A Juliana é muito atenciosa e me passou muita segurança. Meu bebê nasceu super saudável!',
     service: 'Paciente de Nutrição Materno-Infantil',
     dataAiHint: 'woman happy'
   },

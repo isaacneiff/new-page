@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -11,7 +12,7 @@ const nextConfig: NextConfig = {
   images: {
     loader: 'default',
     path: '/_next/image',
-    domains: ['picsum.photos', 'isaacneiff.github.io', 'localhost'],
+    domains: ['picsum.photos', 'isaacneiff.github.io', 'localhost', 'placehold.co'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -30,6 +31,12 @@ const nextConfig: NextConfig = {
         hostname: 'localhost',
         port: '',
         pathname: '/public/assets/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

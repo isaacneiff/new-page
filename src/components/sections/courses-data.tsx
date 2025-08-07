@@ -31,7 +31,7 @@ export const coursesData: Course[] = [
     description:
       "Aprenda a aplicar os princípios da MBE na prática clínica diária. Desenvolva habilidades para análise crítica de estudos científicos, tomada de decisão informada e melhoria da qualidade do cuidado ao paciente. Ideal para estudantes e profissionais da saúde.",
     ctaText: "Inscreva-se Agora",
-    imageSrc: "/assets/medicina.svg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Curso de Medicina Baseada em Evidências",
     dataAiHint: "medical research",
     modules: [
@@ -63,7 +63,7 @@ export const coursesData: Course[] = [
     description:
       "Receba orientação personalizada para sua trajetória acadêmica. Ideal para quem busca desenvolver pesquisa, publicar artigos, preparar-se para processos seletivos de mestrado/doutorado ou aprimorar habilidades didáticas.",
     ctaText: "Agende sua Mentoria",
-    imageSrc: "/assets/mentorias.svg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Mentorias Acadêmicas",
     dataAiHint: "academic guidance",
     modules: [
@@ -95,7 +95,7 @@ export const coursesData: Course[] = [
     description:
       "Descubra como montar uma dieta vegetariana/vegana completa, nutritiva e saborosa, garantindo todos os nutrientes essenciais para sua saúde e bem-estar. Desmistifique mitos e aprenda sobre suplementação consciente.",
     ctaText: "Explore o Vegetarianismo",
-    imageSrc: "/assets/nocoes-basicas.svg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Imagem do curso sobre noções básicas de nutrição",
     dataAiHint: "learning basics",
     modules: [
@@ -121,9 +121,9 @@ export const coursesData: Course[] = [
     description:
       "Entenda quando e como utilizar suplementos alimentares de forma segura e eficaz. Baseado em evidências científicas, este curso aborda os principais tipos de suplementos, suas indicações, riscos e benefícios para diferentes objetivos.",
     ctaText: "Saiba Sobre Suplementos",
-    imageSrc: "/assets/sus-em-50.svg",
-    imageAlt: "Imagem do curso sobre SUS e saúde",
-    dataAiHint: "public health",
+    imageSrc: "https://placehold.co/600x540.png",
+    imageAlt: "Imagem do curso sobre suplementação",
+    dataAiHint: "health supplements",
     modules: [
       {
         id: "sup-mod1",
@@ -147,7 +147,7 @@ export const coursesData: Course[] = [
     description:
       "Aprofunde seus conhecimentos em nutrição esportiva, estratégias de periodização nutricional, hidratação e suplementação específica para otimizar o rendimento e recuperação de atletas de alto rendimento.",
     ctaText: "Maximize Sua Performance",
-    imageSrc: "/assets/course-sports-nutrition.jpg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Curso de Nutrição Esportiva Avançada",
     dataAiHint: "sports performance",
     modules: [
@@ -173,7 +173,7 @@ export const coursesData: Course[] = [
     description:
       "Desenvolva suas habilidades de comunicação e aprenda a criar apresentações cativantes e eficazes. Ideal para estudantes, pesquisadores e profissionais que desejam transmitir suas ideias com clareza, confiança e impacto.",
     ctaText: "Comunique com Excelência",
-    imageSrc: "/assets/course-public-speaking.jpg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Curso de Oratória e Apresentações",
     dataAiHint: "public speaking",
     modules: [
@@ -199,7 +199,7 @@ export const coursesData: Course[] = [
     description:
       "Domine a arte de planejar suas refeições semanais. Economize tempo, dinheiro e garanta uma alimentação equilibrada e variada para toda a família. Aprenda a montar cardápios, listas de compras eficientes e técnicas de preparo.",
     ctaText: "Planeje Suas Refeições",
-    imageSrc: "/assets/course-meal-planning.jpg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Curso de Planejamento de Refeições",
     dataAiHint: "meal prep",
      modules: [
@@ -225,7 +225,7 @@ export const coursesData: Course[] = [
     description:
       "Descubra receitas deliciosas, rápidas e nutritivas para facilitar sua rotina, transformar sua cozinha e adotar um estilo de vida mais saudável sem complicação. Técnicas de preparo, organização e dicas para otimizar seu tempo.",
     ctaText: "Cozinhe com Prazer",
-    imageSrc: "/assets/course-practical-cooking.jpg",
+    imageSrc: "https://placehold.co/600x540.png",
     imageAlt: "Curso de Cozinha Prática e Saudável",
     dataAiHint: "healthy cooking",
      modules: [
@@ -244,4 +244,3 @@ export const coursesData: Course[] = [
     ]
   },
 ];
-

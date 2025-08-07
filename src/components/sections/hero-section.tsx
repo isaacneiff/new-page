@@ -10,11 +10,11 @@ export default function HeroSection() {
       // A cor de fundo da seção é o que antes era o overlay
       className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden bg-primary/60"
     >
-      {/* Container para a imagem LOGO.svg, posicionada sobre o fundo da seção */}
+      {/* Container para a imagem, posicionada sobre o fundo da seção */}
       <div className="absolute inset-0 z-10 flex items-center justify-center p-4 md:p-8"> {/* Padding para evitar que o logo cole nas bordas */}
         <Image
-          src="/assets/LOGO.svg"
-          alt="Zanelatto Academy Logo"
+          src="https://placehold.co/400x400.png"
+          alt="NutriLife Academia Logo"
           layout="fill"
           objectFit="contain"
           priority // Importante para LCP (Largest Contentful Paint)
@@ -22,7 +22,7 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Conteúdo textual, sobre a imagem LOGO.svg */}
+      {/* Conteúdo textual, sobre a imagem */}
       <div className="relative z-20 container mx-auto px-4 py-16">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
           Transforme sua vida com uma nutrição personalizada

@@ -20,8 +20,8 @@ export default function ContactSection() {
                 <Mail size={22} className="text-primary mt-1 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:carla.nutri@email.com" className="hover:text-primary transition-colors break-all">
-                    carla.nutri@email.com
+                  <a href="mailto:juliana.nutri@email.com" className="hover:text-primary transition-colors break-all">
+                    juliana.nutri@email.com
                   </a>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground">Instagram</h4>
                   <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    @carlanutricionista {/* Placeholder */}
+                    @juliananutricionista {/* Placeholder */}
                   </a>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground">Facebook</h4>
                   <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                    /carlanutricionista {/* Placeholder */}
+                    /juliananutricionista {/* Placeholder */}
                   </a>
                 </div>
               </div>
